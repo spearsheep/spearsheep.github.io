@@ -1,29 +1,26 @@
-# Baiting Zhu
+# Jun Yu Chen
 
-![Baiting Zhu](path_to_image.jpg) <!-- Update this with the actual path to your image -->
+![Jun Yu Chen](path_to_image.jpg) <!-- Update this with the actual path to your image -->
 
-I am an incoming MSCS student at Stanford University. I completed my undergraduate degree at UCLA majoring in Math of Computation (math & cs) with a minor in Statistics. My research interests are in the areas of Deep Reinforcement Learning and Generative Models. I am actively looking for potential research opportunities in Fall 2023!
+👋 Hi, I'm a Data Science and Machine Learning Researcher with experience in interdisciplinary studies at Ahmet Arac Lab and Stein Eyes Institute. I've applied ML algorithms including inverse reinforcement learning and Deep Learning models to understand both motor cortex behavior and improve glaucoma diagnosis
 
-Currently, I am a student researcher at Machine Intelligence (MINT) group where I am fortunate to be advised by Prof. Aditya Grover, and a research intern at Microsoft Research Asia (MSRA), ML/RL team where I am fortunate to be advised by Dr. Li Zhao and Pushi Zhang. Previously, I interned at Kiaushou Technology as an deep learning engineer where I built search models and managed data pipelines.
+📊 Beyond research, I love innovating. I'm an entrepreneur, co-founding Jobs Jr. that provides an innovative way to revolutionize job discovery process for college students. At Bruin Sports Analytics, I've authored headline journals, including predicting the NBA champions with 90% accuracy and creating a deployed recommendation system for League of Legends players.
+
+🔍 I'm continuously seeking internship opportunities and collaborations at the crossroads of data science, machine learning, and diverse sectors such as life sciences, business, and entertainment. Eager to connect with like-minded professionals and contribute to a world shaped by both natural intelligence and AI-driven solutions. Feel free to connect!
 
 ## News
 
-- **Mar 22, 2023** - I will become a Stanford MSCS student in Fall 2023.
-- **Jan 21, 2023** - Our work "Scaling Pareto-Efficient Decision Making via Offline Multi-Objective RL" is accepted to ICLR 2023!
+- **Mar 22, 2023** - 
+- **Jan 21, 2023** - 
 
 ## Selected Publications
 
-![Scaling Pareto-Efficient Decision Making via Offline Multi-Objective RL](path_to_thumbnail.jpg) <!-- Update this with the actual path to your publication image -->
-
-**Scaling Pareto-Efficient Decision Making via Offline Multi-Objective RL**  
-_Baiting Zhu, Meihua Dang, and Aditya Grover_  
-_International Conference on Learning Representations (ICLR), 2023_
 
 [Abstract](#) | [Bib](#) | [PDF](#) | [Code](#) | [Poster](#) | [Website](#)
 
 ## Contact
 
-10933 Rochester Ave,  
+10633 Eastborne Ave,  
 Los Angeles, CA 90024  
-[LinkedIn](https://www.linkedin.com)  
-[Email](mailto:your_email@example.com)  
+[LinkedIn]([https://www.linkedin.com](https://www.linkedin.com/in/jun-yu-chen-798718221/))  
+[Email](jochen030327@g.ucla.edu)  
