@@ -1,12 +1,14 @@
 # Jun Yu Chen
 
-![Jun Yu Chen](path_to_image.jpg) <!-- Update this with the actual path to your image -->
+![Jun Yu Chen](linkedin_profile.jpg) <!-- Update this with the actual path to your image -->
 
-👋 Hi, I'm a Data Science and Machine Learning Researcher with experience in interdisciplinary studies at Ahmet Arac Lab and Stein Eyes Institute. I've applied ML algorithms including inverse reinforcement learning and Deep Learning models to understand both motor cortex behavior and improve glaucoma diagnosis
+👋 Hi, I'm a Junior student at UCLA majoring in Data Theory and Cognitive Science. My Research interests are in the areas of reinforcement learning and multi-modal models. 
 
-📊 Beyond research, I love innovating. I'm an entrepreneur, co-founding Jobs Jr. that provides an innovative way to revolutionize job discovery process for college students. At Bruin Sports Analytics, I've authored headline journals, including predicting the NBA champions with 90% accuracy and creating a deployed recommendation system for League of Legends players.
+Currently, I am a machine learning student researcher at the Visual Intelligence Lab within the Center for Vision, Cognition, Learning, and Autonomy, under the guidance of Dr. Tao Gao. I am also a research intern at the Ahmet Arac Lab in the Neurology Department. My research projects span a diverse range of topics, from using inverse reinforcement learning to decode skilled mouse movements, to diagnosing glaucoma with generative models, to developing multi-agent reinforcement learning strategies for simulation games.
 
-🔍 I'm continuously seeking internship opportunities and collaborations at the crossroads of data science, machine learning, and diverse sectors such as life sciences, business, and entertainment. Eager to connect with like-minded professionals and contribute to a world shaped by both natural intelligence and AI-driven solutions. Feel free to connect!
+📊 Beyond my research endeavors, I am passionate about innovation. I co-founded Jobs Jr., a startup aimed at transforming the job discovery process for college students. At Bruin Sports Analytics, I have authored prominent research articles, including predicting NBA champions with 90% accuracy and developing a recommendation system for League of Legends players.
+
+🔍 I am actively seeking internship opportunities and collaborations at the intersection of data science, machine learning, and various sectors including life sciences, business, and entertainment. I am keen to connect with like-minded professionals and contribute to a world influenced by both natural intelligence and AI-driven solutions. Feel free to reach out and connect!
 
 ## News
 
@@ -14,7 +16,6 @@
 - **Jan 21, 2023** - 
 
 ## Selected Publications
-
 
 [Abstract](#) | [Bib](#) | [PDF](#) | [Code](#) | [Poster](#) | [Website](#)
 
