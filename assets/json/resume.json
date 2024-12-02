@@ -31,17 +31,16 @@
       ]
     }
   ],
-  "Experience": [
+  "experience": [
     {
       "name": "Visual Intelligence Lab (Statistics & Data Science Department)",
       "position": "Machine Learning Researcher",
       "url": "",
       "startDate": "March 2024",
       "endDate": "Present",
-      "summary": "Develop LLM-based open-world agents capable of adaptive learning and reasoning .",
+      "summary": "Develop LLM-based open-world agents capable of adaptive learning and reasoning.",
       "highlights": [
-        "Multi-agent Reinforcement Learning, LLM-based Agent Frameworks",
-
+        "Multi-agent Reinforcement Learning, LLM-based Agent Frameworks"
       ]
     },
     {
@@ -50,18 +49,20 @@
       "url": "",
       "startDate": "May 2023",
       "endDate": "Present",
-      "description": "Interdisciplinary research on neural mechanisms, motor cortex, and machine learning applications.",
-      "highlights": ["Adversarial Inverse Reinforcement Learning, Object Detection, PyQt5 GUI"
+      "summary": "Interdisciplinary research on neural mechanisms, motor cortex, and machine learning applications.",
+      "highlights": [
+        "Adversarial Inverse Reinforcement Learning, Object Detection, PyQt5 GUI"
       ]
     },
     {
       "name": "Job Junior",
       "position": "Founder & Machine Learning Engineer",
       "url": "",
-      "startDate": "Sep 2023",
+      "startDate": "September 2023",
       "endDate": "Present",
-      "summary": "Automate and personalize job search and application processes",
-      "highlights": ["Web scraping, LLM Qlora Finetuning, CoT Prompt Engineering"
+      "summary": "Automate and personalize job search and application processes.",
+      "highlights": [
+        "Web scraping, LLM Qlora Finetuning, CoT Prompt Engineering"
       ]
     },
     {
@@ -72,86 +73,74 @@
       "endDate": "2024-03-01",
       "summary": "Reconstructing visual fields with generative models for glaucoma diagnosis.",
       "highlights": [
-        "Variational and Masked Autoencoders, Visual Field Evaluation Methods(GRI,PLR,MD)",
+        "Variational and Masked Autoencoders, Visual Field Evaluation Methods (GRI, PLR, MD)"
       ]
-    },
+    }
   ],
   "projects": [
     {
       "name": "STATS C163 Generative Data Science Project",
-      "summary": "Synthetic Data Generation with LLM for Improved Depression Prediction",
+      "summary": "Synthetic Data Generation with LLM for Improved Depression Prediction.",
       "highlights": [
-        "Llama3 Finetuning, TF-IDF, BERT ",
-      ]
+        "Llama3 Finetuning, TF-IDF, BERT"
+      ],
       "startDate": "April 2024",
-      "endDate": "June 2024",
+      "endDate": "June 2024"
     },
     {
       "name": "Bruin Sports Analytics (BSA)",
       "summary": "Implemented cost-sensitive neural network model, accurately predicted the 2022-2023 NBA champion and top 3 contenders.",
       "highlights": [
-        "Grid Search, PCA, Gradient Boost Classifier",
-      ]
+        "Grid Search, PCA, Gradient Boost Classifier"
+      ],
       "startDate": "April 2022",
-      "endDate": "June 2022",
-    }
+      "endDate": "June 2022"
+    },
     {
       "name": "Bruin Sports Analytics (BSA)",
       "summary": "Deployed content-based champion recommendation systems for League of Legends players on Streamlit.",
       "highlights": [
-        "Streamlit, Deep Neural Networks, Recommendation System.",
-      ]
-      "startDate": "Jan 2022",
-      "endDate": "April 2022",
+        "Streamlit, Deep Neural Networks, Recommendation System"
+      ],
+      "startDate": "January 2022",
+      "endDate": "April 2022"
     }
   ],
   "skills": [
     {
-      "name": "Machine Learning",
-      "level": "Expert",
+      "name": "Research & Modeling",
       "keywords": [
+        "Machine Learning",
         "Reinforcement Learning",
-        "LLM-Based Agents",
-        "Multimodal Models",
-        "Computer Vision",
-        "Object Detection"
+        "LLM Finetuning and Prompt Engineering",
+        "Computer Vision"
+      ]
+    },
+    {
+      "name": "Programming",
+      "keywords": [
+        "Python",
+        "C++",
+        "R",
+        "MySQL"
+      ]
+    },
+    {
+      "name": "Packages",
+      "keywords": [
+        "Pytorch",
+        "Tensorflow",
+        "Imitation",
+        "Selenium",
+        "PyQt5"
       ]
     }
   ],
-  "skills": [{
-    "name": "Research & Modeling",
-    "keywords": [
-      "Machine Learning",
-     "Reinforcement Learning",
-      "LLM Finetuning and Prompt Engineering",
-      "Computer Vision"
-    ]
-  },
-  {
-    "name": "Programming",
-    "keywords": [
-      "Python",
-     "C++",
-      "R",
-      "MySQL"
-    ]
-  },
-  {
-    "name": "Packages",
-    "keywords": [
-      "Pytorch",
-     "Tensorflow",
-      "Imitation",
-      "Selenium",
-      "PyQt5"
-    ]
-  }],
   "languages": [
     {
       "language": "English",
       "fluency": "Fluent"
     }
-  ],
-  
+  ]
 }
 
