@@ -2,96 +2,108 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Jun Yu (Johnny) Chen
     - name: Date of Birth
-      value: 14th March 1879
+      value: 
     - name: Languages
-      value: English, German
+      value: English
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Bachelor of Science in Cognitive Science with Specialization in Computation & Minor in Data Science Engineering
+      institution: University of California, Los Angeles
+      year: Fall 2021 – Expected June 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - GPA: 3.922/4.0
+        - Dean’s Honor List
+        - UCLA Statistics Club
+        - UCLA DataRes Research
+        - UCLA Bruin Sports Analytics
+        - Relevant Coursework:
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+            - Data Science: Regression and Data Analysis, Machine Learning Specialization, Data Mining, Convolutional Neural Networks, Generative Data Science
+            - Computer Science: Advanced C++ Programming, Algorithms, Computer Vision and Deep Learning, Sequence Models, Fundamentals of Reinforcement Learning, Artificial Intelligence and Symbolic Reasoning
+            - Cognitive Science: Cognitive Psychology and Psychobiology, Human Memory and Decision Making, Principles of Behavioral Neuroscience
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Machine Learning Researcher
+      institution: Visual Intelligence Lab (Statistics & Data Science Department)
+      year: March 2024 – Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Engineered LLM-based agent frameworks with RAG memory pools, primitive actions, and interactive environment using Mineflayer and LangChain.
+        - Developed benchmarks achieving over 90% success rate for task type-1 with GPT-4 backend.
+        - Designed multimodal workflows featuring self-learning mechanisms.
+        - Implemented multi-agent reinforcement learning algorithms including MADDPG and QMIX using PyTorch.
+
+    - title: Data Science & Machine Learning Researcher
+      institution: Ahmet Arac Lab (Neurology Department)
+      year: May 2023 – Present
       description:
-        - Description 1.
-        - Description 2.
+        - Conducted research on neural and behavioral mechanisms using ML algorithms.
+        - Built DeepBehavior, a GUI pipeline for neuroscience research.
+        - Adapted MobileNet with PyTorch for optogenetic interventions.
+        - Integrated AIRL into Variational Gaussian Hidden Markov Model for mouse trajectory analysis.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Founder & Machine Learning Engineer
+      institution: Job Junior
+      year: September 2023 – Present
       description:
+        - Founded a start-up automating the job search process with real-time scraping and LLMs.
+        - Achieved 93% accuracy in job classification using fine-tuned NER models and pipelines.
+        - Annotated 50,000 training data using Prodigy within 3 months.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Data Science Research Intern
+      institution: Stein Eyes Institute
+      year: June 2023 – March 2024
+      description:
+        - Worked on deep learning models for glaucoma diagnosis.
+        - Improved diagnostic accuracy by 10%.
+        - Developed CNNs achieving MAE of 3.1 for visual field prediction.
+
+    - title: Research Journalist
+      institution: Bruin Sports Analytics (BSA)
+      year: February 2022 – Spring 2023
+      description:
+        - Developed a neural network predicting the NBA champion with 90% accuracy.
+        - Deployed a recommendation system for League of Legends players using Streamlit.
+        - Authored research articles and created dashboards.
 
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: DeepBehavior
+      year: May 2023 – Present
+      description: An all-in-one GUI pipeline for object detection and optogenetic manipulations in neuroscience research.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2021 – Present
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+        - Dean’s Honor List at UCLA
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Multi-Agent Reinforcement Learning and Collaboration
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Developing algorithms for multi-agent systems.
+        - Applications in simulated and real-world environments.
+    - title: Open-World LLM and Multimodal Model-Driven Agents
       items:
-        - Description 1.
-        - Description 2.
+        - Integrating large language models with multimodal data.
+        - Enhancing agent development and capabilities.
+    - title: Computer Vision and Object Detection
+      items:
+        - Focusing on object detection techniques.
+        - Implementing computer vision applications in research.
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Basketball, Swimming, Piano, Saxophone
+
+
