@@ -18,8 +18,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+👋 My name is Jun Yu Chen, and I am an undergraduate student at UCLA, majoring in Cognitive Science with a specialization in Computation and minoring in Data Science Engineering. My research interests lie in open-world embodied agents, reinforcement learning, human cognition, and computer vision. I am fortunate to be an Undergraduate Machine Learning Researcher at the Visual Intelligence Lab, advised by Prof. Tao Gao, and at the Ahmet Arac Lab, advised by Dr. Ahmet Arac. My research focuses on building LLM-backed agents capable of spatial reasoning and structure building, developing closed-loop markerless pose detection integrated with optogenetic manipulations, and advancing glaucoma diagnosis using autoencoder reconstruction, among other areas.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+📊 Beyond research, I am passionate about innovation. I co-founded Jobs Jr., a start-up revolutionizing the job discovery and application process for college students. Our vision is to create a one-stop platform that personalizes and streamlines the application process, tailored to the unique needs of students.
+
+🔍 I am constantly seeking collaborations at the intersection of human cognition, machine learning, and neuroscience. I am eager to connect with like-minded professionals and contribute to a future shaped by both natural intelligence and AI-driven solutions. Feel free to reach out and connect!
