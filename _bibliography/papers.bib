@@ -2,6 +2,7 @@
 ---
 
 @misc{wu2024selfsuperviseddenoisingvisualfield,
+      bibtex_show = {true},
       title={Self-supervised denoising of visual field data improves detection of glaucoma progression}, 
       author={Sean Wu and Jun Yu Chen and Vahid Mohammadzadeh and Sajad Besharati and Jaewon Lee and Kouros Nouri-Mahdavi and Joseph Caprioli and Zhe Fei and Fabien Scalzo},
       year={2024},
@@ -9,9 +10,13 @@
       archivePrefix={arXiv},
       primaryClass={eess.IV},
       url={https://arxiv.org/abs/2411.12146}, 
+      pdf         = {https://arxiv.org/abs/2411.12146},
+      selected    = {true},
+      abstract    = {Perimetric measurements provide insight into a patient's peripheral vision and day-to-day functioning and are the main outcome measure for identifying progression of visual damage from glaucoma. However, visual field data can be noisy, exhibiting high variance, especially with increasing damage. In this study, we demonstrate the utility of self-supervised deep learning in denoising visual field data from over 4000 patients to enhance its signal-to-noise ratio and its ability to detect true glaucoma progression. We deployed both a variational autoencoder (VAE) and a masked autoencoder to determine which self-supervised model best smooths the visual field data while reconstructing salient features that are less noisy and more predictive of worsening disease. Our results indicate that including a categorical p-value at every visual field location improves the smoothing of visual field data. Masked autoencoders led to cleaner denoised data than previous methods, such as variational autoencoders. A 4.7% increase in detection of progressing eyes with pointwise linear regression (PLR) was observed. The masked and variational autoencoders' smoothed data predicted glaucoma progression 2.3 months earlier when p-values were included compared to when they were not. The faster prediction of time to progression (TTP) and the higher percentage progression detected support our hypothesis that masking out visual field elements during training while including p-values at each location would improve the task of detection of visual field progression. Our study has clinically relevant implications regarding masking when training neural networks to denoise visual field data, resulting in earlier and more accurate detection of glaucoma progression. This denoising model can be integrated into future models for visual field analysis to enhance detection of glaucoma progression.},
 }
 
 @misc{chen2024aptarchitecturalplanningtexttoblueprint,
+      bibtex_show = {true},
       title={APT: Architectural Planning and Text-to-Blueprint Construction Using Large Language Models for Open-World Agents}, 
       author={Jun Yu Chen and Tao Gao},
       year={2024},
@@ -19,9 +24,13 @@
       archivePrefix={arXiv},
       primaryClass={cs.LG},
       url={https://arxiv.org/abs/2411.17255}, 
+      pdf         = {https://arxiv.org/abs/2411.17255},
+      selected    = {true},
+      abstract    = {We present APT, an advanced Large Language Model (LLM)-driven framework that enables autonomous agents to construct complex and creative structures within the Minecraft environment. Unlike previous approaches that primarily concentrate on skill-based open-world tasks or rely on image-based diffusion models for generating voxel-based structures, our method leverages the intrinsic spatial reasoning capabilities of LLMs. By employing chain-of-thought decomposition along with multimodal inputs, the framework generates detailed architectural layouts and blueprints that the agent can execute under zero-shot or few-shot learning scenarios. Our agent incorporates both memory and reflection modules to facilitate lifelong learning, adaptive refinement, and error correction throughout the building process. To rigorously evaluate the agent's performance in this emerging research area, we introduce a comprehensive benchmark consisting of diverse construction tasks designed to test creativity, spatial reasoning, adherence to in-game rules, and the effective integration of multimodal instructions. Experimental results using various GPT-based LLM backends and agent configurations demonstrate the agent's capacity to accurately interpret extensive instructions involving numerous items, their positions, and orientations. The agent successfully produces complex structures complete with internal functionalities such as Redstone-powered systems. A/B testing indicates that the inclusion of a memory module leads to a significant increase in performance, emphasizing its role in enabling continuous learning and the reuse of accumulated experience. Additionally, the agent's unexpected emergence of scaffolding behavior highlights the potential of future LLM-driven agents to utilize subroutine planning and leverage the emergence ability of LLMs to autonomously develop human-like problem-solving techniques.},
 }
 
 @misc{kang2024syntheticdatagenerationllm,
+      bibtex_show = {true},
       title={Synthetic Data Generation with LLM for Improved Depression Prediction}, 
       author={Andrea Kang and Jun Yu Chen and Zoe Lee-Youngzie and Shuhao Fu},
       year={2024},
@@ -29,4 +38,7 @@
       archivePrefix={arXiv},
       primaryClass={cs.LG},
       url={https://arxiv.org/abs/2411.17672}, 
+      pdf         = {https://arxiv.org/abs/2411.17672},
+      selected    = {true},
+      abstract    = {Automatic detection of depression is a rapidly growing field of research at the intersection of psychology and machine learning. However, with its exponential interest comes a growing concern for data privacy and scarcity due to the sensitivity of such a topic. In this paper, we propose a pipeline for Large Language Models (LLMs) to generate synthetic data to improve the performance of depression prediction models. Starting from unstructured, naturalistic text data from recorded transcripts of clinical interviews, we utilize an open-source LLM to generate synthetic data through chain-of-thought prompting. This pipeline involves two key steps: the first step is the generation of the synopsis and sentiment analysis based on the original transcript and depression score, while the second is the generation of the synthetic synopsis/sentiment analysis based on the summaries generated in the first step and a new depression score. Not only was the synthetic data satisfactory in terms of fidelity and privacy-preserving metrics, it also balanced the distribution of severity in the training dataset, thereby significantly enhancing the model's capability in predicting the intensity of the patient's depression. By leveraging LLMs to generate synthetic data that can be augmented to limited and imbalanced real-world datasets, we demonstrate a novel approach to addressing data scarcity and privacy concerns commonly faced in automatic depression detection, all while maintaining the statistical integrity of the original dataset. This approach offers a robust framework for future mental health research and applications.},
 }
