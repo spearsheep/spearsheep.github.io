@@ -23,7 +23,7 @@
 
 <!-- Fonts & Icons -->
 <link defer rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
-{% if site.third_party_libraries.google_fonts.url.fonts %}
+{% if site.third_party_libraries.google_fonts.url.fonts != blank %}
   <link
     defer
     rel="stylesheet"

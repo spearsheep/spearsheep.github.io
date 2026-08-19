@@ -486,7 +486,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts:
+      fonts: ""
   highlightjs:
     integrity:
       css:
