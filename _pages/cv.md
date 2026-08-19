@@ -1,11 +1,9 @@
 ---
 layout: cv
 permalink: /cv/
-title: cv
+title: CV
 nav: true
-nav_order: 5
-cv_pdf: JUN YU_Chen_CV.pdf
-description:
-toc:
-  sidebar: left
+nav_order: 4
+cv_pdf: Jun_Yu_Chen_Resume.pdf
+description: A selected, web-readable CV. Download the latest PDF for full details.
 ---

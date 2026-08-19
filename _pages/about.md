@@ -1,25 +1,26 @@
 ---
 layout: about
-title: about
+title: Home
 permalink: /
-subtitle: 
-
+description: Jun Yu Chen is a machine learning researcher, engineer, and founder working on embodied agents, reinforcement learning, and multimodal systems.
+eyebrow: MSE @ Penn · MLE @ TikTok · Founder @ Anima Lab
+hero: I build machine learning systems that learn from feedback, reason across modalities, and act in open worlds.
+focus:
+  - Embodied agents
+  - Reinforcement learning
+  - Human cognition
+  - Computer vision
 profile:
-  align: right
-  image: DSC09196.png
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>10633 Eastborne Ave</p>
-    <p>Los Angeles, California 90024</p>
-
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+  image: prof_pic.jpg
+news: true
+selected_papers: true
+social: true
 ---
 
+I am an MSE student in **Data Science** and **Computer & Information Science** at the University of Pennsylvania. I completed my B.S. at UCLA in Cognitive Science, specializing in Computation, with a minor in Data Science Engineering. My work sits at the intersection of open-world embodied agents, reinforcement learning, human cognition, and computer vision.
 
-👋 My name is Jun Yu Chen, and I am an incoming MSE DS student at the University of Pennsylvania. I completed my undergraduate degree at UCLA majoring in Cognitive Science with a specialization in Computation and minoring in Data Science Engineering. My research interests lie in open-world embodied agents, reinforcement learning, human cognition, and computer vision. I am fortunate to be an Undergraduate Machine Learning Researcher at the Visual Intelligence Lab, advised by [Prof. Tao Gao](http://www.stat.ucla.edu/~taogao/) and at the Columbia DAP (Data, Agents, Processes) Lab, advised by [Prof. Zhou Yu](https://www.cs.columbia.edu/~zhouyu/). My research focuses on developing LLM-based job-resume matching systems using GRPO reinforcement learning and SFT, building LLM-backed embodied agents capable of spatial reasoning and structure construction, and advancing glaucoma diagnosis through autoencoder-based reconstruction, among other areas.
+At the **Generative Machine Learning Research Group**, advised by [Prof. Jiatao Gu](https://jiataogu.me/), I develop LLM-backed embodied agents that turn multimodal instructions into spatial plans and executable structures. Previously, at the **Columbia DAP Lab**, advised by [Prof. Zhou Yu](https://www.cs.columbia.edu/~zhouyu/), I trained job-resume matching systems with SFT and GRPO. I have also studied autoencoder-based reconstruction for glaucoma progression and privacy-preserving synthetic data for depression prediction.
 
-📊 Beyond research, I am passionate about innovation. I co-founded Jobs Jr., a start-up revolutionizing the job discovery and application process for college students. Our vision is to create a one-stop platform that personalizes and streamlines the application process, tailored to the unique needs of students.
+Beyond research, I care about turning ambitious ideas into useful products. I founded [Anima Lab](https://anima-lab.io/), a cross-platform AI companion, and co-founded **Job Junior**, a student-first platform designed to make job discovery and applications more personal, efficient, and accessible.
 
-🔍 I am constantly seeking collaborations at the intersection of human cognition, machine learning, and neuroscience. I am eager to connect with like-minded professionals and contribute to a future shaped by both natural intelligence and AI-driven solutions. Feel free to reach out and connect!
+I am always glad to meet people working across natural and artificial intelligence. If you are exploring a hard problem in agents, learning, or cognition, [let's talk](mailto:jochen03@seas.upenn.edu).

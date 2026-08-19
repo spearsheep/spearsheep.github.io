@@ -1,109 +1,153 @@
-- title: General Information
+- title: Profile
   type: map
   contents:
-    - name: Full Name
+    - name: Name
       value: Jun Yu (Johnny) Chen
-    - name: Date of Birth
-      value: 
-    - name: Languages
-      value: English
+    - name: Email
+      value: <a href="mailto:jochen03@seas.upenn.edu">jochen03@seas.upenn.edu</a>
+    - name: Focus
+      value: Embodied agents, reinforcement learning, multimodal systems, human cognition, and computer vision
 
 - title: Education
   type: time_table
   contents:
-    - title: Bachelor of Science in Cognitive Science with Specialization in Computation & Minor in Data Science Engineering
-      institution: University of California, Los Angeles
-      year: Fall 2021 – Expected June 2025
+    - title: MSE in Data Science & MSE in Computer and Information Science
+      institution: University of Pennsylvania
+      location: Philadelphia, PA
+      year: 2025–2027
       description:
-        - GPA: 3.922/4.0
-        - Dean’s Honor List
-        - UCLA Statistics Club
-        - UCLA DataRes Research
-        - UCLA Bruin Sports Analytics
-        - Relevant Coursework:
-          contents:
-            - Data Science: Regression and Data Analysis, Machine Learning Specialization, Data Mining, Convolutional Neural Networks, Generative Data Science
-            - Computer Science: Advanced C++ Programming, Algorithms, Computer Vision and Deep Learning, Sequence Models, Fundamentals of Reinforcement Learning, Artificial Intelligence and Symbolic Reasoning
-            - Cognitive Science: Cognitive Psychology and Psychobiology, Human Memory and Decision Making, Principles of Behavioral Neuroscience
+        - Expected May 2027
+    - title: BS in Cognitive Science, Specialization in Computation
+      institution: University of California, Los Angeles
+      location: Los Angeles, CA
+      year: 2021–2025
+      description:
+        - Minor in Data Science Engineering
+        - GPA 3.935/4.0; Cum Laude; Dean's Honor List
+        - UCLA DataRes Research and UCLA Bruin Sports Analytics
 
-- title: Experience
+- title: Industry & Product
+  type: time_table
+  contents:
+    - title: Machine Learning Engineer Intern
+      institution: TikTok
+      location: Seattle, WA
+      year: 2026–Now
+      description:
+        - Built an end-to-end teacher-student distillation pipeline for personalized e-commerce intent recognition using query signals and multimodal user behavior.
+        - Productionized daily Spark, SQL, and LLM labeling DAGs generating 40K reasoning-annotated labels per day at 85% human alignment.
+        - Trained an embedding-native Qwen3 decoder with feature encoders, Perceiver cross-attention, latent reasoning, and RL post-training; improved AUC from 0.52 to 0.83 and accuracy to 79%.
+    - title: Founder & Founding Engineer
+      institution: Anima Lab
+      location: Philadelphia, PA
+      year: 2026–Now
+      description:
+        - Launched a cross-platform AI companion across Next.js, native SwiftUI, and React Native on a shared TypeScript and Convex backend; reached 1,000+ users, recurring revenue, and 40K+ followers.
+        - Built a real-time multimodal agent with image generation, voice synthesis, tool use, and self-evolving memory; raised recall accuracy by 13% and monthly active use by 20%.
+        - Led a team of more than five and built growth infrastructure that increased signup conversion by 15%.
+      linkitems:
+        - link: https://anima-lab.io/
+          linkname: Website
+    - title: Co-Founder & Founding Engineer
+      institution: Job Junior
+      location: Los Angeles, CA
+      year: 2023–2026
+      description:
+        - Built LLM-based job and candidate matching with Playwright, LangChain, FAISS, and QLoRA; achieved a 15%+ response rate across 1K+ outreach targets.
+        - Built an asyncio, MongoDB, FastAPI, AWS, and Docker ETL pipeline with 6x higher throughput; supported daily collection from 800+ companies and a $2K+/month pilot.
+
+- title: Research
   type: time_table
   contents:
     - title: Machine Learning Researcher
-      institution: Visual Intelligence Lab (Statistics & Data Science Department)
-      year: March 2024 – Present
+      institution: Generative Machine Learning Research Group · Advisor — Prof. Jiatao Gu
+      location: Philadelphia, PA
+      year: 2024–Now
       description:
-        - Engineered LLM-based agent frameworks with RAG memory pools, primitive actions, and interactive environment using Mineflayer and LangChain.
-        - Developed benchmarks achieving over 90% success rate for task type-1 with GPT-4 backend.
-        - Designed multimodal workflows featuring self-learning mechanisms.
-        - Implemented multi-agent reinforcement learning algorithms including MADDPG and QMIX using PyTorch.
-
-    - title: Data Science & Machine Learning Researcher
-      institution: Ahmet Arac Lab (Neurology Department)
-      year: May 2023 – Present
+        - Built a multimodal LLM agent with RAG memory and self-reflection, translating language and images into structured blueprints and autonomous Minecraft execution.
+        - Developed multi-view visual and world-state verification for exact structural diffs and iterative repair, improving one-shot generation accuracy by 25%.
+        - Fine-tuned a Qwen3 blueprint generator with trajectory supervision, SFT, and RL, improving spatial consistency and structural correctness by 12%.
+      linkitems:
+        - link: https://arxiv.org/abs/2411.17255
+          linkname: Paper
+        - link: https://jiataogu.me/
+          linkname: Advisor
+    - title: Machine Learning Researcher
+      institution: Columbia DAP Lab · Advisor — Prof. Zhou Yu
+      location: New York, NY
+      year: 2025
       description:
-        - Conducted research on neural and behavioral mechanisms using ML algorithms.
-        - Built DeepBehavior, a GUI pipeline for neuroscience research.
-        - Adapted MobileNet with PyTorch for optogenetic interventions.
-        - Integrated AIRL into Variational Gaussian Hidden Markov Model for mouse trajectory analysis.
+        - Fine-tuned Qwen2.5 and Qwen3 with SFT and GRPO for structured job-resume retrieval, improving nDCG by 17% over ConFit-V2.
+        - Built scalable synthetic-data and distillation pipelines with vLLM, LLaMA-Factory, DeepSpeed ZeRO-3, and LLM-judge reranking.
+        - Designed a VERL reward, curriculum, and tolerant parsing strategy that improved recall by 23%; self-rationalized recruiter intent added 10% nDCG.
+      linkitems:
+        - link: https://www.cs.columbia.edu/~zhouyu/
+          linkname: Advisor
 
-    - title: Founder & Machine Learning Engineer
-      institution: Job Junior
-      year: September 2023 – Present
-      description:
-        - Founded a start-up automating the job search process with real-time scraping and LLMs.
-        - Achieved 93% accuracy in job classification using fine-tuned NER models and pipelines.
-        - Annotated 50,000 training data using Prodigy within 3 months.
-
-    - title: Data Science Research Intern
-      institution: Stein Eyes Institute
-      year: June 2023 – March 2024
-      description:
-        - Worked on deep learning models for glaucoma diagnosis.
-        - Improved diagnostic accuracy by 10%.
-        - Developed CNNs achieving MAE of 3.1 for visual field prediction.
-
-    - title: Research Journalist
-      institution: Bruin Sports Analytics (BSA)
-      year: February 2022 – Spring 2023
-      description:
-        - Developed a neural network predicting the NBA champion with 90% accuracy.
-        - Deployed a recommendation system for League of Legends players using Streamlit.
-        - Authored research articles and created dashboards.
-
-- title: Open Source Projects
+- title: Selected Project
   type: time_table
   contents:
-    - title: DeepBehavior
-      year: May 2023 – Present
-      description: An all-in-one GUI pipeline for object detection and optogenetic manipulations in neuroscience research.
+    - title: Synthetic Data Generation with LLMs for Improved Depression Prediction
+      institution: Generative Data Science
+      location: Los Angeles, CA
+      year: 2024
+      description:
+        - Trained a chain-of-thought-style LLaMA 3 QLoRA model to create privacy-preserving clinical synopses for PHQ-8 prediction.
+        - Improved downstream BERT regression from 5.01 to 4.39 RMSE while embedding-distance evaluation showed lower privacy risk.
+        - Accepted at the Annual Meeting of the Cognitive Science Society.
+      linkitems:
+        - link: https://arxiv.org/abs/2411.17672
+          linkname: Paper
 
-- title: Honors and Awards
+- title: Publications
   type: time_table
   contents:
-    - year: 2021 – Present
-      items:
-        - Dean’s Honor List at UCLA
+    - title: "APT: Architectural Planning and Text-to-Blueprint Construction Using Large Language Models for Open-World Agents"
+      year: 2025
+      description:
+        - AAAI LM4Plan Workshop
+      linkitems:
+        - link: https://arxiv.org/abs/2411.17255
+          linkname: arXiv
+    - title: Synthetic Data Generation with LLM for Improved Depression Prediction
+      year: 2025
+      description:
+        - Annual Meeting of the Cognitive Science Society
+      linkitems:
+        - link: https://arxiv.org/abs/2411.17672
+          linkname: arXiv
+    - title: Self-supervised Denoising of Visual Field Data Improves Detection of Glaucoma Progression
+      year: 2024
+      description:
+        - arXiv preprint
+      linkitems:
+        - link: https://arxiv.org/abs/2411.12146
+          linkname: arXiv
 
-- title: Academic Interests
+- title: Technical Focus
   type: nested_list
   contents:
-    - title: Multi-Agent Reinforcement Learning and Collaboration
+    - title: Machine learning
       items:
-        - Developing algorithms for multi-agent systems.
-        - Applications in simulated and real-world environments.
-    - title: Open-World LLM and Multimodal Model-Driven Agents
+        - PyTorch, Qwen, SFT, GRPO, VERL, RLHF, vLLM, DeepSpeed, LLaMA-Factory, multimodal agents
+    - title: Data & systems
       items:
-        - Integrating large language models with multimodal data.
-        - Enhancing agent development and capabilities.
-    - title: Computer Vision and Object Detection
+        - Python, TypeScript, SQL, Spark, FastAPI, MongoDB, Convex, AWS, Docker
+    - title: Product engineering
       items:
-        - Focusing on object detection techniques.
-        - Implementing computer vision applications in research.
+        - Next.js, React Native, SwiftUI, agent tool use, memory systems, real-time multimodal experiences
 
-- title: Other Interests
+- title: Honors
+  type: time_table
+  contents:
+    - year: 2025
+      items:
+        - Cum Laude, UCLA
+        - Dean's Honor List, UCLA
+        - APT accepted to the AAAI LM4Plan Workshop
+        - Synthetic Data Generation accepted to CogSci 2025
+
+- title: Outside the Lab
   type: list
   contents:
-    - <u>Hobbies:</u> Basketball, Swimming, Piano, Saxophone
-
-
+    - Basketball, swimming, piano, and saxophone

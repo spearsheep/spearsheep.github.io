@@ -1,80 +1,104 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
+<div class="portfolio-home">
+  <header class="home-hero" aria-labelledby="home-title">
+    <div class="home-hero__copy">
+      <p class="home-eyebrow"><span class="status-dot" aria-hidden="true"></span>{{ page.eyebrow }}</p>
+      <h1 id="home-title" class="home-title"><span>Jun Yu</span><em>Chen</em></h1>
+      <p class="home-deck">{{ page.hero }}</p>
+      <div class="home-actions" aria-label="Primary links">
+        <a class="button button--primary" href="{{ '/assets/pdf/Jun_Yu_Chen_Resume.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"
+          >View resume <span aria-hidden="true">↗</span></a
+        >
+        <a class="button button--quiet" href="mailto:{{ site.email }}">Start a conversation <span aria-hidden="true">→</span></a>
+      </div>
+      {% if page.focus %}
+        <ul class="focus-list" aria-label="Research interests">
+          {% for item in page.focus %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
       {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    </div>
+    <aside class="home-portrait" aria-label="Portrait of Jun Yu Chen">
+      <div class="home-portrait__frame">
+        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+        {% include figure.liquid loading="eager" path=profile_image_path class="home-portrait__image" alt="Jun Yu Chen" cache_bust=true %}
+        <span class="home-portrait__mark" aria-hidden="true">JYC / 26</span>
+      </div>
+      <div class="home-portrait__caption"><span>Philadelphia, PA</span><span>Penn MSE · 2027</span></div>
+    </aside>
   </header>
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
+  <section class="home-intro" aria-labelledby="about-heading">
+    <div>
+      <p class="section-index">01 / About</p>
+      <h2 id="about-heading">Building agents that can reason, learn, and act.</h2>
+    </div>
+    <div class="home-intro__copy">{{ content }}</div>
+  </section>
+
+  <section class="signal-strip" aria-label="Selected impact">
+    <div class="signal"><strong>1,000+</strong><span>users reached with Anima</span></div>
+    <div class="signal"><strong>+23%</strong><span>recall in job-resume retrieval</span></div>
+    <div class="signal"><strong>3</strong><span>papers and preprints across AI + health</span></div>
+  </section>
+
+  <section class="home-section" aria-labelledby="work-heading">
+    <div class="section-heading">
+      <div>
+        <p class="section-index">02 / Selected work</p>
+        <h2 id="work-heading">Research with a route to the real world.</h2>
       </div>
-    {% endif %}
+      <a class="section-link" href="{{ '/projects/' | relative_url }}">All projects <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="project-grid project-grid--home">
+      {% assign featured_projects = site.projects | where: 'featured', true | sort: 'importance' %}
+      {% for project in featured_projects -%}
+        {%- include projects.liquid -%}
+      {%- endfor %}
+    </div>
+  </section>
 
-    <div class="clearfix">{{ content }}</div>
-
-    <!-- News -->
-    {% if page.news and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
+  {% if page.news and site.announcements.enabled %}
+    <section class="home-section home-section--compact" aria-labelledby="news-heading">
+      <div class="section-heading">
+        <div>
+          <p class="section-index">03 / Now</p>
+          <h2 id="news-heading">Recent notes.</h2>
+        </div>
+        <a class="section-link" href="{{ '/news/' | relative_url }}">Archive <span aria-hidden="true">→</span></a>
+      </div>
       {% include news.liquid limit=true %}
-    {% endif %}
+    </section>
+  {% endif %}
 
-    <!-- Latest posts -->
-    {% if site.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
+  {% if page.selected_papers %}
+    <section class="home-section" aria-labelledby="papers-heading">
+      <div class="section-heading">
+        <div>
+          <p class="section-index">04 / Publications</p>
+          <h2 id="papers-heading">Selected writing and research.</h2>
+        </div>
+        <a class="section-link" href="{{ '/publications/' | relative_url }}">View all <span aria-hidden="true">→</span></a>
+      </div>
       {% include selected_papers.liquid %}
-    {% endif %}
+    </section>
+  {% endif %}
 
-    <!-- Social -->
+  <section class="home-contact" aria-labelledby="contact-heading">
+    <p class="section-index">05 / Contact</p>
+    <h2 id="contact-heading">Have an ambitious agent problem?</h2>
+    <p>I am always interested in thoughtful collaborations across embodied AI, reinforcement learning, multimodal systems, and human cognition.</p>
+    <a class="button button--inverse" href="mailto:{{ site.email }}">
+      {{- site.email }}
+      <span aria-hidden="true">↗</span></a
+    >
     {% if page.social %}
-      <div class="social">
+      <div class="social" aria-label="Social profiles">
         <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
-
-    {% if site.newsletter.enabled and site.footer_fixed %}
-      {% include scripts/newsletter.liquid center=true %}
-    {% endif %}
-  </article>
+  </section>
 </div>

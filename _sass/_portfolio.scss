@@ -1,0 +1,824 @@
+/******************************************************************************
+ * Jun Yu Chen portfolio — editorial research notebook
+ ******************************************************************************/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--global-bg-color);
+  background-image:
+    radial-gradient(circle at 8% 14%, rgba(212, 79, 50, 0.07), transparent 27rem),
+    radial-gradient(circle at 92% 52%, rgba(32, 76, 54, 0.06), transparent 30rem);
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  line-height: 1.72;
+  letter-spacing: -0.012em;
+}
+
+h1,
+h2,
+h3,
+.post-title {
+  font-family: "Newsreader", serif;
+  letter-spacing: -0.045em;
+}
+
+::selection {
+  color: #fff8ef;
+  background: var(--global-theme-color);
+}
+
+.container {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.navbar {
+  min-height: 64px;
+  border-bottom: 1px solid var(--global-divider-color);
+  background: rgba(243, 239, 231, 0.88);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+html[data-theme="dark"] .navbar {
+  background: rgba(17, 22, 18, 0.88);
+}
+
+.navbar .navbar-brand {
+  font-family: "Newsreader", serif;
+  font-size: 1.25rem;
+  font-weight: 500 !important;
+  letter-spacing: -0.03em;
+}
+
+.brand-mark span {
+  color: var(--global-theme-color);
+}
+
+.navbar .navbar-nav .nav-link,
+#search-toggle .nav-link {
+  position: relative;
+  padding: 0.65rem 0.8rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-nav .nav-item.active > .nav-link::after {
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.35rem;
+  left: 0.8rem;
+  height: 2px;
+  background: var(--global-theme-color);
+  content: "";
+}
+
+.portfolio-home {
+  margin-top: -1.25rem;
+}
+
+.home-hero {
+  display: grid;
+  min-height: 650px;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: clamp(3rem, 8vw, 7.5rem);
+  align-items: center;
+  padding: clamp(4.5rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 6.5rem);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.home-hero__copy {
+  animation: portfolio-rise 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.home-eyebrow,
+.section-index,
+.project-card__meta,
+.home-portrait__caption,
+.home-portrait__mark,
+.case-study__facts span {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.home-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 2.25rem;
+  color: var(--global-text-color-light);
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--global-theme-color);
+  box-shadow: 0 0 0 5px rgba(212, 79, 50, 0.12);
+}
+
+.home-title {
+  margin: 0;
+  font-size: clamp(5.3rem, 11vw, 9.25rem);
+  font-weight: 500;
+  line-height: 0.72;
+}
+
+.home-title span,
+.home-title em {
+  display: block;
+}
+
+.home-title em {
+  margin-left: clamp(2rem, 9vw, 7.5rem);
+  color: var(--global-theme-color);
+  font-weight: 400;
+}
+
+.home-deck {
+  max-width: 670px;
+  margin: 3rem 0 0;
+  font-family: "Newsreader", serif;
+  font-size: clamp(1.45rem, 2.3vw, 2rem);
+  line-height: 1.25;
+  letter-spacing: -0.028em;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2.25rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-height: 46px;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--global-text-color);
+  border-radius: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button--primary {
+  color: #fff8ef !important;
+  border-color: var(--global-theme-color);
+  background: var(--global-theme-color);
+}
+
+.button--quiet {
+  color: var(--global-text-color) !important;
+  background: transparent;
+}
+
+.button--quiet:hover {
+  color: var(--global-bg-color) !important;
+  background: var(--global-text-color);
+}
+
+.button--inverse {
+  color: var(--portfolio-ink-color) !important;
+  border-color: var(--global-bg-color);
+  background: var(--global-bg-color);
+}
+
+.focus-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 2.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.focus-list li {
+  padding: 0.4rem 0.65rem;
+  border: 1px solid var(--global-divider-color);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+}
+
+.home-portrait {
+  position: relative;
+  animation: portfolio-rise 700ms 140ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.home-portrait__frame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  padding: 0.7rem;
+  border: 1px solid var(--global-text-color);
+  background: var(--portfolio-panel-color);
+}
+
+.home-portrait__frame::before {
+  position: absolute;
+  z-index: -1;
+  top: -1.1rem;
+  right: -1.1rem;
+  width: 38%;
+  height: 26%;
+  border-top: 1px solid var(--global-theme-color);
+  border-right: 1px solid var(--global-theme-color);
+  content: "";
+}
+
+.home-portrait figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.home-portrait__image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.78) contrast(1.04);
+}
+
+.home-portrait__mark {
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  padding: 0.55rem 0.7rem;
+  color: #fff8ef;
+  background: var(--global-theme-color);
+}
+
+.home-portrait__caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.8rem;
+  color: var(--global-text-color-light);
+}
+
+.home-intro {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(3rem, 9vw, 8rem);
+  padding: clamp(5rem, 10vw, 8rem) 0;
+}
+
+.section-index {
+  margin-bottom: 1.1rem;
+  color: var(--global-theme-color);
+}
+
+.home-intro h2,
+.section-heading h2,
+.home-contact h2 {
+  max-width: 680px;
+  margin: 0;
+  font-size: clamp(2.65rem, 5.5vw, 4.75rem);
+  font-weight: 500;
+  line-height: 0.98;
+}
+
+.home-intro__copy {
+  padding-top: 1.9rem;
+}
+
+.home-intro__copy p {
+  margin-bottom: 1.35rem;
+  font-size: 1.04rem;
+}
+
+.signal-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: var(--portfolio-ink-color);
+}
+
+.signal {
+  display: flex;
+  min-height: 190px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.signal:last-child {
+  border-right: 0;
+}
+
+.signal strong {
+  color: var(--global-bg-color);
+  font-family: "Newsreader", serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.signal span {
+  max-width: 180px;
+  color: var(--global-bg-color);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.67rem;
+  letter-spacing: 0.05em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.home-section {
+  padding: clamp(5rem, 10vw, 8rem) 0;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.home-section--compact {
+  padding-top: clamp(4rem, 7vw, 6rem);
+  padding-bottom: clamp(4rem, 7vw, 6rem);
+}
+
+.section-heading {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 3.25rem;
+}
+
+.section-link {
+  flex: 0 0 auto;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid currentColor;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color);
+  background: var(--global-divider-color);
+}
+
+.project-card {
+  min-width: 0;
+  background: var(--global-bg-color);
+}
+
+.project-card__link {
+  position: relative;
+  display: flex;
+  min-height: 330px;
+  flex-direction: column;
+  padding: clamp(1.5rem, 3.5vw, 2.5rem);
+  color: var(--global-text-color) !important;
+  text-decoration: none !important;
+  transition:
+    background-color 220ms ease,
+    transform 220ms ease;
+}
+
+.project-card__link::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: var(--global-theme-color);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 220ms ease;
+}
+
+.project-card__link:hover {
+  background: var(--portfolio-panel-color);
+}
+
+.project-card__link:hover::before {
+  transform: scaleX(1);
+}
+
+.project-card__meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--global-text-color-light);
+}
+
+.project-card h2,
+.project-card h3 {
+  max-width: 460px;
+  margin: 2.2rem 0 1rem;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.project-card p {
+  max-width: 500px;
+  color: var(--global-text-color-light);
+  line-height: 1.6;
+}
+
+.project-card .project-card__impact {
+  margin-top: auto;
+  padding-top: 2rem;
+  color: var(--global-theme-color);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.project-card__cta {
+  margin-top: 1rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.home-section .news .table {
+  margin-bottom: 0;
+}
+
+.home-section .news tr {
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.home-section .news th,
+.home-section .news td {
+  padding: 1.1rem 0;
+  vertical-align: top;
+}
+
+.home-section .news th {
+  color: var(--global-theme-color);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.home-section .news td {
+  padding-left: 1.5rem;
+}
+
+.home-section .publications ol.bibliography li {
+  margin-bottom: 0;
+  padding: 2rem 0;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.home-section .publications .title {
+  font-family: "Newsreader", serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.home-contact {
+  position: relative;
+  margin: clamp(5rem, 10vw, 8rem) 0 2rem;
+  padding: clamp(2.5rem, 6vw, 5rem);
+  overflow: hidden;
+  color: var(--global-bg-color);
+  background: var(--portfolio-ink-color);
+}
+
+.home-contact::after {
+  position: absolute;
+  right: -5rem;
+  bottom: -9rem;
+  width: 22rem;
+  height: 22rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  content: "";
+}
+
+.home-contact h2,
+.home-contact p,
+.home-contact .section-index,
+.home-contact .contact-icons i::before {
+  color: var(--global-bg-color);
+}
+
+.home-contact > p:not(.section-index) {
+  max-width: 650px;
+  margin: 1.5rem 0 2rem;
+}
+
+.home-contact .social {
+  margin: 2.25rem 0 0;
+  text-align: left;
+}
+
+.home-contact .contact-icons {
+  font-size: 1.6rem;
+}
+
+.post-header {
+  padding: clamp(2.5rem, 7vw, 5rem) 0 2rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.post-title {
+  font-size: clamp(3.2rem, 7vw, 5.5rem);
+  font-weight: 500;
+  line-height: 0.95;
+}
+
+.post-description {
+  max-width: 720px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.project-page-intro {
+  max-width: 760px;
+  margin: 3rem 0;
+  font-family: "Newsreader", serif;
+  font-size: clamp(1.45rem, 2.6vw, 2rem);
+  line-height: 1.3;
+}
+
+.project-grid--archive {
+  margin-bottom: 4rem;
+}
+
+.case-study {
+  max-width: 880px;
+  margin: 3.5rem auto 5rem;
+}
+
+.case-study__lede {
+  margin-bottom: 2.75rem;
+  font-family: "Newsreader", serif;
+  font-size: clamp(1.7rem, 3.6vw, 2.6rem);
+  line-height: 1.2;
+}
+
+.case-study__facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 3.5rem;
+  border-top: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.case-study__facts > div {
+  display: flex;
+  min-height: 125px;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 1.15rem;
+  border-right: 1px solid var(--global-divider-color);
+}
+
+.case-study__facts > div:last-child {
+  border-right: 0;
+}
+
+.case-study__facts span {
+  color: var(--global-theme-color);
+}
+
+.case-study__facts strong {
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.case-study h2 {
+  margin: 3rem 0 1.25rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.case-study > p:not(.case-study__lede) {
+  max-width: 720px;
+  font-size: 1.03rem;
+}
+
+.case-study > .button {
+  margin-top: 1.5rem;
+}
+
+.cv .card {
+  margin-top: 0 !important;
+  padding: 2rem 0 !important;
+  border: 0;
+  border-bottom: 1px solid var(--global-divider-color);
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.cv-header {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.cv-download {
+  flex: 0 0 auto;
+  margin-bottom: 0.5rem;
+}
+
+.cv .card-title {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cv .list-group-item {
+  border-color: var(--global-divider-color);
+  background: transparent;
+}
+
+.cv .badge {
+  color: #fff8ef;
+  background: var(--global-theme-color) !important;
+}
+
+footer {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.02em;
+}
+
+@keyframes portfolio-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .home-hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .home-portrait {
+    width: min(100%, 480px);
+  }
+
+  .home-intro {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .home-intro__copy {
+    max-width: 720px;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding-right: 1.15rem;
+    padding-left: 1.15rem;
+  }
+
+  .home-hero {
+    padding-top: 4rem;
+  }
+
+  .home-title {
+    font-size: clamp(4.5rem, 24vw, 7rem);
+  }
+
+  .home-title em {
+    margin-left: 1.25rem;
+  }
+
+  .home-eyebrow {
+    align-items: flex-start;
+    line-height: 1.5;
+  }
+
+  .home-actions .button {
+    width: 100%;
+  }
+
+  .signal-strip,
+  .project-grid,
+  .case-study__facts {
+    grid-template-columns: 1fr;
+  }
+
+  .signal {
+    min-height: 150px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .signal:last-child {
+    border-bottom: 0;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .section-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+  }
+
+  .project-card__link {
+    min-height: 300px;
+  }
+
+  .home-section .news th {
+    width: 92px !important;
+  }
+
+  .home-section .news td {
+    padding-left: 0.75rem;
+  }
+
+  .home-contact {
+    margin-right: -1.15rem;
+    margin-left: -1.15rem;
+  }
+
+  .home-contact .button {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .cv-header {
+    display: block;
+  }
+
+  .cv-download {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .case-study__facts > div {
+    min-height: 100px;
+    border-right: 0;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .case-study__facts > div:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
