@@ -105,12 +105,11 @@
             </li>
           {% endif %}
           {% if site.enable_darkmode %}
-            <!-- Toogle theme mode -->
+            <!-- Toggle theme mode -->
             <li class="toggle-container">
-              <button id="light-toggle" title="Change theme">
-                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
-                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
-                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
+              <button id="light-toggle" type="button" title="Switch color theme" aria-label="Switch color theme">
+                <i class="ti ti-moon" id="theme-icon-moon" aria-hidden="true"></i>
+                <i class="ti ti-sun" id="theme-icon-sun" aria-hidden="true"></i>
               </button>
             </li>
           {% endif %}

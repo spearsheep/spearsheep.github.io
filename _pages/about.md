@@ -3,15 +3,15 @@ layout: about
 title: Home
 permalink: /
 description: Jun Yu Chen is a machine learning researcher, engineer, and founder working on embodied agents, reinforcement learning, and multimodal systems.
-eyebrow: MSE @ Penn · MLE @ TikTok · Founder @ Anima Lab
-hero: I build machine learning systems that learn from feedback, reason across modalities, and act in open worlds.
+eyebrow: Machine Learning Researcher · Engineer · Founder
+hero: I build intelligent systems that reason, learn from feedback, and work in the real world.
 focus:
   - Embodied agents
   - Reinforcement learning
   - Human cognition
   - Computer vision
 profile:
-  image: prof_pic.jpg
+  image: jun-yu-chen-profile.jpg
 news: true
 selected_papers: true
 social: true
@@ -23,4 +23,4 @@ At the **Generative Machine Learning Research Group**, advised by [Prof. Jiatao 
 
 Beyond research, I care about turning ambitious ideas into useful products. I founded [Anima Lab](https://anima-lab.io/), a cross-platform AI companion, and co-founded **Job Junior**, a student-first platform designed to make job discovery and applications more personal, efficient, and accessible.
 
-I am always glad to meet people working across natural and artificial intelligence. If you are exploring a hard problem in agents, learning, or cognition, [let's talk](mailto:jochen03@seas.upenn.edu).
+I am always glad to meet people working across natural and artificial intelligence. If you are exploring a hard problem in agents, learning, or cognition, [let's talk](mailto:junyujohnnychen@gmail.com).

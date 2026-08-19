@@ -1,15 +1,9 @@
 // Has to be in the head tag, otherwise a flicker effect will occur.
 
-// Toggle through light, dark, and system theme settings.
+// Toggle directly between light and dark while respecting the system preference
+// until the visitor makes an explicit choice.
 let toggleThemeSetting = () => {
-  let themeSetting = determineThemeSetting();
-  if (themeSetting == "system") {
-    setThemeSetting("light");
-  } else if (themeSetting == "light") {
-    setThemeSetting("dark");
-  } else {
-    setThemeSetting("system");
-  }
+  setThemeSetting(determineComputedTheme() === "dark" ? "light" : "dark");
 };
 
 // Change the theme setting and apply the theme.
@@ -51,6 +45,7 @@ let applyTheme = () => {
   }
 
   document.documentElement.setAttribute("data-theme", theme);
+  updateThemeToggle(theme);
 
   // Add class to tables.
   let tables = document.getElementsByTagName("table");
@@ -81,6 +76,15 @@ let applyTheme = () => {
       background: getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color") + "ee", // + 'ee' for trasparency.
     });
   }
+};
+
+let updateThemeToggle = (theme) => {
+  const modeToggle = document.getElementById("light-toggle");
+  if (!modeToggle) return;
+
+  const label = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
+  modeToggle.setAttribute("aria-label", label);
+  modeToggle.setAttribute("title", label);
 };
 
 let setHighlight = (theme) => {
@@ -239,6 +243,8 @@ let initTheme = () => {
   // Add event listener to the theme toggle button.
   document.addEventListener("DOMContentLoaded", function () {
     const mode_toggle = document.getElementById("light-toggle");
+
+    updateThemeToggle(determineComputedTheme());
 
     mode_toggle.addEventListener("click", function () {
       toggleThemeSetting();

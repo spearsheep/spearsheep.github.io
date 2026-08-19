@@ -5,13 +5,13 @@ layout: default
   <header class="home-hero" aria-labelledby="home-title">
     <div class="home-hero__copy">
       <p class="home-eyebrow"><span class="status-dot" aria-hidden="true"></span>{{ page.eyebrow }}</p>
-      <h1 id="home-title" class="home-title"><span>Jun Yu</span><em>Chen</em></h1>
+      <h1 id="home-title" class="home-title">Jun Yu Chen</h1>
       <p class="home-deck">{{ page.hero }}</p>
       <div class="home-actions" aria-label="Primary links">
         <a class="button button--primary" href="{{ '/assets/pdf/Jun_Yu_Chen_Resume.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"
-          >View resume <span aria-hidden="true">↗</span></a
+          >View résumé <span aria-hidden="true">↗</span></a
         >
-        <a class="button button--quiet" href="mailto:{{ site.email }}">Start a conversation <span aria-hidden="true">→</span></a>
+        <a class="button button--quiet" href="mailto:{{ site.email }}">Email me <span aria-hidden="true">↗</span></a>
       </div>
       {% if page.focus %}
         <ul class="focus-list" aria-label="Research interests">
@@ -25,31 +25,22 @@ layout: default
       <div class="home-portrait__frame">
         {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
         {% include figure.liquid loading="eager" path=profile_image_path class="home-portrait__image" alt="Jun Yu Chen" cache_bust=true %}
-        <span class="home-portrait__mark" aria-hidden="true">JYC / 26</span>
       </div>
-      <div class="home-portrait__caption"><span>Philadelphia, PA</span><span>Penn MSE · 2027</span></div>
+      <div class="home-portrait__caption"><span>Philadelphia, PA</span><span>Penn MSE · '27</span></div>
     </aside>
   </header>
 
   <section class="home-intro" aria-labelledby="about-heading">
-    <div>
-      <p class="section-index">01 / About</p>
-      <h2 id="about-heading">Building agents that can reason, learn, and act.</h2>
-    </div>
+    <p class="section-index">About</p>
+    <h2 id="about-heading">Researching how intelligent systems understand and act in open worlds.</h2>
     <div class="home-intro__copy">{{ content }}</div>
-  </section>
-
-  <section class="signal-strip" aria-label="Selected impact">
-    <div class="signal"><strong>1,000+</strong><span>users reached with Anima</span></div>
-    <div class="signal"><strong>+23%</strong><span>recall in job-resume retrieval</span></div>
-    <div class="signal"><strong>3</strong><span>papers and preprints across AI + health</span></div>
   </section>
 
   <section class="home-section" aria-labelledby="work-heading">
     <div class="section-heading">
       <div>
-        <p class="section-index">02 / Selected work</p>
-        <h2 id="work-heading">Research with a route to the real world.</h2>
+        <p class="section-index">Selected work</p>
+        <h2 id="work-heading">From research questions to working systems.</h2>
       </div>
       <a class="section-link" href="{{ '/projects/' | relative_url }}">All projects <span aria-hidden="true">→</span></a>
     </div>
@@ -65,8 +56,8 @@ layout: default
     <section class="home-section home-section--compact" aria-labelledby="news-heading">
       <div class="section-heading">
         <div>
-          <p class="section-index">03 / Now</p>
-          <h2 id="news-heading">Recent notes.</h2>
+          <p class="section-index">Now</p>
+          <h2 id="news-heading">Recent updates.</h2>
         </div>
         <a class="section-link" href="{{ '/news/' | relative_url }}">Archive <span aria-hidden="true">→</span></a>
       </div>
@@ -78,8 +69,8 @@ layout: default
     <section class="home-section" aria-labelledby="papers-heading">
       <div class="section-heading">
         <div>
-          <p class="section-index">04 / Publications</p>
-          <h2 id="papers-heading">Selected writing and research.</h2>
+          <p class="section-index">Publications</p>
+          <h2 id="papers-heading">Selected research.</h2>
         </div>
         <a class="section-link" href="{{ '/publications/' | relative_url }}">View all <span aria-hidden="true">→</span></a>
       </div>
@@ -88,17 +79,21 @@ layout: default
   {% endif %}
 
   <section class="home-contact" aria-labelledby="contact-heading">
-    <p class="section-index">05 / Contact</p>
-    <h2 id="contact-heading">Have an ambitious agent problem?</h2>
-    <p>I am always interested in thoughtful collaborations across embodied AI, reinforcement learning, multimodal systems, and human cognition.</p>
-    <a class="button button--inverse" href="mailto:{{ site.email }}">
-      {{- site.email }}
-      <span aria-hidden="true">↗</span></a
-    >
-    {% if page.social %}
-      <div class="social" aria-label="Social profiles">
-        <div class="contact-icons">{% include social.liquid %}</div>
-      </div>
-    {% endif %}
+    <div>
+      <p class="section-index">Contact</p>
+      <h2 id="contact-heading">Let's build something thoughtful.</h2>
+      <p>I am open to collaborations across embodied AI, reinforcement learning, multimodal systems, and human cognition.</p>
+    </div>
+    <div class="home-contact__actions">
+      <a class="button button--primary" href="mailto:{{ site.email }}">
+        {{- site.email }}
+        <span aria-hidden="true">↗</span></a
+      >
+      {% if page.social %}
+        <div class="social" aria-label="Social profiles">
+          <div class="contact-icons">{% include social.liquid %}</div>
+        </div>
+      {% endif %}
+    </div>
   </section>
 </div>
