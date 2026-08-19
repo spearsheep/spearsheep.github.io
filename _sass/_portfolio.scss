@@ -399,6 +399,36 @@ button:focus-visible {
   background: var(--portfolio-panel-color);
 }
 
+.project-grid--home .project-card--spotlight {
+  position: relative;
+  grid-column: 1 / -1;
+}
+
+.project-grid--home .project-card--spotlight::before {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: var(--global-theme-color);
+  content: "";
+  pointer-events: none;
+}
+
+.project-grid--home .project-card--spotlight .project-card__link {
+  min-height: 320px;
+}
+
+.project-grid--home .project-card--spotlight h3 {
+  max-width: 760px;
+  font-size: clamp(2.25rem, 4.5vw, 3.7rem);
+}
+
+.project-grid--home .project-card--spotlight p {
+  max-width: 760px;
+}
+
 .project-card__link {
   display: flex;
   min-height: 340px;

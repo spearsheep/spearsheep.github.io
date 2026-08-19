@@ -4,7 +4,7 @@ title: Privacy-preserving synthetic data
 description: LLM-generated clinical synopses for stronger depression prediction with less information leakage.
 category: Human-centered ML
 year: 2024
-importance: 5
+importance: 6
 featured: false
 impact: RMSE 4.39 vs 5.01 baseline
 ---

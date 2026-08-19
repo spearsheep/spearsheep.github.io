@@ -4,7 +4,7 @@ title: Anima Lab
 description: A real-time, multimodal AI companion built across web, iOS, and Android.
 category: Product systems
 year: 2026–present
-importance: 1
+importance: 4
 featured: true
 impact: 1,000+ users · 40K+ followers · recurring revenue
 ---

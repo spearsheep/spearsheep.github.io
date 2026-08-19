@@ -1,6 +1,6 @@
 {% assign project_link = project.url | relative_url %}
 {% if project.redirect %}{% assign project_link = project.redirect %}{% endif %}
-<article class="project-card">
+<article class="project-card{% if project.spotlight %} project-card--spotlight{% endif %}">
   <a
     class="project-card__link"
     href="{{ project_link }}"

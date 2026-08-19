@@ -8,7 +8,7 @@ nav_order: 3
 ---
 
 <div class="project-page-intro">
-  <p>I like work that closes the loop between an ambitious research question and a system that can be tested in the world. These projects range from published research to products used by real people.</p>
+  <p>I build machine learning systems across production, research, and product environments. The work here ranges from large-scale personalization and model distillation to agentic systems, reinforcement learning, and human-centered AI.</p>
 </div>
 
 <div class="project-grid project-grid--archive">
