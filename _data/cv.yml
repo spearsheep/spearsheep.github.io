@@ -34,7 +34,7 @@
       location: Seattle, WA
       year: May 2026–present
       description:
-        - Built an end-to-end teacher-student distillation pipeline for personalized e-commerce intent recognition using query signals and multimodal user behavior, spanning offline labeling, data infrastructure, and student models optimized for 150ms online serving.
+        - Built an end-to-end teacher-student distillation pipeline for personalized e-commerce intent recognition across millions of query and multimodal user-behavior examples, spanning offline labeling, data infrastructure, and student models optimized for 150ms online serving.
         - Productionized daily Spark, SQL, and LLM labeling DAGs generating 40K reasoning-annotated labels per day at 85% human alignment.
         - Architected a sparse-ID model combining SENet, DCN, LHUC personalized gating, and DIN sequence attention across 150+ sparse, dense, and sequential features.
         - Trained a 0.6B-parameter embedding-native Qwen3 decoder with feature encoders, Perceiver cross-attention, latent reasoning, and RL post-training; improved AUC from 0.52 to 0.83 and accuracy to 79%.

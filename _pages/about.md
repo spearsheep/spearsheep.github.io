@@ -17,7 +17,7 @@ selected_papers: true
 social: true
 ---
 
-I am an MSE student in **Data Science** and **Computer & Information Science** at the University of Pennsylvania. I completed my B.S. at UCLA in Cognitive Science, specializing in Computation, with a minor in Data Science Engineering. At **TikTok**, I build production-scale learning systems for personalized e-commerce intent recognition using model distillation, multimodal behavior signals, and reinforcement learning.
+I am an MSE student in **Data Science** and **Computer & Information Science** at the University of Pennsylvania. I completed my B.S. at UCLA in Cognitive Science, specializing in Computation, with a minor in Data Science Engineering. At **TikTok**, I build production-scale learning systems for personalized e-commerce intent recognition, distilling millions of multimodal behavioral examples into models optimized for online serving.
 
 At the **Generative Machine Learning Research Group**, advised by [Prof. Jiatao Gu](https://jiataogu.me/), I develop LLM-backed agentic systems that turn multimodal instructions into spatial plans and executable structures. Previously, at the **Columbia DAP Lab**, advised by [Prof. Zhou Yu](https://www.cs.columbia.edu/~zhouyu/), I trained job-resume matching systems with SFT and GRPO. I have also studied autoencoder-based reconstruction for glaucoma progression and privacy-preserving synthetic data for depression prediction.
 
