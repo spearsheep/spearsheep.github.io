@@ -2,7 +2,7 @@
 layout: page
 permalink: /projects/
 title: Selected work
-description: Research and products spanning embodied intelligence, reinforcement learning, and human-centered machine learning.
+description: Research and products spanning agentic systems, reinforcement learning, natural language processing, and human-centered machine learning.
 nav: true
 nav_order: 3
 ---

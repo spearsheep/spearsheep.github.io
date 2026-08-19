@@ -6,7 +6,7 @@
     - name: Email
       value: <a href="mailto:junyujohnnychen@gmail.com">junyujohnnychen@gmail.com</a>
     - name: Focus
-      value: Embodied agents, reinforcement learning, multimodal systems, human cognition, and computer vision
+      value: Agentic systems, reinforcement learning, natural language processing, human cognition, and computer vision
 
 - title: Education
   type: time_table

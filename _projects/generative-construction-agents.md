@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Generative construction agents
-description: LLM-backed embodied agents that plan, build, inspect, and repair structures in Minecraft.
-category: Embodied AI
+description: LLM-backed agentic systems that plan, build, inspect, and repair structures in Minecraft.
+category: Agentic systems
 year: 2024–present
 importance: 2
 featured: true

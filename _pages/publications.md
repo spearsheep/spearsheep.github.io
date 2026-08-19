@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Work on embodied agents, human-centered machine learning, and clinical AI.
+description: Work on agentic systems, natural language processing, human-centered machine learning, and clinical AI.
 nav: true
 nav_order: 2
 ---
