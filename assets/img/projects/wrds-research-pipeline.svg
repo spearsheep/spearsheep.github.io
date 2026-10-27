@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Paper2WRDS financial research pipeline</title>
+  <desc id="desc">
+    Finance papers are parsed with multi-GPU MinerU, stored in Amazon S3, split into text, equation and visual chunks with source metadata, and
+    indexed in Qdrant. Research questions drive planning, retrieval, source grounding, and Python or SQL draft generation with quotation and syntax
+    checks. A versioned workspace supports researcher feedback and revision.
+  </desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10Z" fill="#70818e" />
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" rx="0" fill="#ffffff" />
+
+  <text x="80" y="67" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" text-anchor="start">
+    PAPER2WRDS / FINANCIAL RESEARCH SYSTEMS
+  </text>
+  <text x="80" y="126" fill="#20313f" font-family="Georgia, Times New Roman, serif" font-size="48" font-weight="400" text-anchor="start">
+    From financial papers to reviewable research
+  </text>
+  <path d="M80 151H1840" stroke="#b9c4ca" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="80" y="191" fill="#20313f" font-family="Georgia, serif" font-size="24" font-weight="700" text-anchor="start">a</text>
+  <text x="112" y="191" fill="#20313f" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="start">
+    Corpus construction &amp; indexing
+  </text>
+  <text x="1840" y="191" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="end">
+    ~19.3K papers · ~1.3 s/page parsing
+  </text>
+  <rect x="80" y="218" width="410" height="244" rx="8" fill="#fcfdfd" stroke="#cdd5da" stroke-width="1.5" />
+  <text x="105" y="363" fill="#20313f" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="600" text-anchor="start">
+    Finance literature
+  </text>
+  <text x="105" y="399" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="start">
+    Journal PDFs
+  </text>
+  <text x="105" y="434" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">
+    Source documents
+  </text>
+  <rect x="530" y="218" width="410" height="244" rx="8" fill="#fcfdfd" stroke="#cdd5da" stroke-width="1.5" />
+  <text x="555" y="363" fill="#20313f" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="600" text-anchor="start">
+    Distributed parsing
+  </text>
+  <text x="555" y="399" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="start">
+    MinerU · multi-GPU workers
+  </text>
+  <text x="555" y="434" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">
+    Structured blocks → Amazon S3
+  </text>
+  <rect x="980" y="218" width="410" height="244" rx="8" fill="#fcfdfd" stroke="#cdd5da" stroke-width="1.5" />
+  <text x="1005" y="363" fill="#20313f" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="600" text-anchor="start">
+    Context-aware chunks
+  </text>
+  <text x="1005" y="399" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="start">
+    Text · equations · figures
+  </text>
+  <text x="1005" y="434" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">
+    Paper identity + page + section
+  </text>
+  <rect x="1430" y="218" width="410" height="244" rx="8" fill="#fcfdfd" stroke="#cdd5da" stroke-width="1.5" />
+  <text x="1455" y="363" fill="#20313f" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="600" text-anchor="start">
+    Vector evidence index
+  </text>
+  <text x="1455" y="399" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="start">
+    Qdrant collections
+  </text>
+  <text x="1455" y="434" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">
+    Metadata-filtered retrieval
+  </text>
+  <rect x="122" y="244" width="62" height="76" rx="5" fill="#ffffff" stroke="#bdcad3" stroke-width="1.5" />
+  <rect x="110" y="253" width="62" height="76" rx="5" fill="#ffffff" stroke="#326d92" stroke-width="2" />
+  <path d="M121 268h35" stroke="#326d92" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M121 278h40" stroke="#326d92" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M121 288h28" stroke="#326d92" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M121 313l9-10 9 4 10-13 12 7" stroke="#326d92" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="565" y="258" width="67" height="67" rx="8" fill="#f2f7f9" stroke="#326d92" stroke-width="2" />
+  <rect x="580" y="273" width="37" height="37" rx="5" fill="#ffffff" stroke="#326d92" stroke-width="2" />
+  <path
+    d="M576 251v7 M576 325v7 M558 269h7 M632 269h7"
+    stroke="#326d92"
+    stroke-width="2"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M590 251v7 M590 325v7 M558 283h7 M632 283h7"
+    stroke="#326d92"
+    stroke-width="2"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M604 251v7 M604 325v7 M558 297h7 M632 297h7"
+    stroke="#326d92"
+    stroke-width="2"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M618 251v7 M618 325v7 M558 311h7 M632 311h7"
+    stroke="#326d92"
+    stroke-width="2"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path d="M589 292h19 M599 282v19" stroke="#326d92" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="1010" y="251" width="80" height="20" rx="4" fill="#ffffff" stroke="#326d92" stroke-width="1.7" />
+  <path d="M1020 258h57 M1020 264h38" stroke="#326d92" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="1010" y="276" width="80" height="20" rx="4" fill="#ffffff" stroke="#287b78" stroke-width="1.7" />
+  <text x="1020" y="291" fill="#287b78" font-family="Georgia, serif" font-size="13" font-weight="400" text-anchor="start">f(x) = Σ wᵢxᵢ</text>
+  <rect x="1010" y="301" width="80" height="20" rx="4" fill="#ffffff" stroke="#93494b" stroke-width="1.7" />
+  <path d="M1020 315v-7h12v7h12v-11h12v11h13" stroke="#93494b" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M1460 272v42c0 12 40 12 40 0V272" fill="#ffffff" stroke="#326d92" stroke-width="1.8" />
+  <ellipse cx="1480" cy="272" rx="20" ry="8" fill="#f7fafb" stroke="#326d92" stroke-width="1.8" />
+  <path d="M1460 293c0 12 40 12 40 0" stroke="#326d92" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M1494 258v42c0 12 40 12 40 0V258" fill="#ffffff" stroke="#287b78" stroke-width="1.8" />
+  <ellipse cx="1514" cy="258" rx="20" ry="8" fill="#f7fafb" stroke="#287b78" stroke-width="1.8" />
+  <path d="M1494 279c0 12 40 12 40 0" stroke="#287b78" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M1528 272v42c0 12 40 12 40 0V272" fill="#ffffff" stroke="#93494b" stroke-width="1.8" />
+  <ellipse cx="1548" cy="272" rx="20" ry="8" fill="#f7fafb" stroke="#93494b" stroke-width="1.8" />
+  <path d="M1528 293c0 12 40 12 40 0" stroke="#93494b" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M498 340h24" stroke="#70818e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+  <path d="M948 340h24" stroke="#70818e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+  <path d="M1398 340h24" stroke="#70818e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+  <path
+    d="M1635 462V534H596V651"
+    stroke="#70818e"
+    stroke-width="2"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    marker-end="url(#arrow)"
+  />
+  <rect x="972" y="519" width="370" height="30" rx="0" fill="#ffffff" stroke="#ffffff" stroke-width="0" />
+  <text x="1157" y="541" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle">
+    Relevant passages + source metadata
+  </text>
+  <text x="80" y="604" fill="#20313f" font-family="Georgia, serif" font-size="24" font-weight="700" text-anchor="start">b</text>
+  <text x="112" y="604" fill="#20313f" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="start">
+    Evidence-grounded research &amp; refinement
+  </text>
+  <rect x="80" y="651" width="304" height="249" rx="8" fill="#ffffff" stroke="#cdd5da" stroke-width="1.5" />
+  <rect x="80" y="651" width="304" height="5" rx="0" fill="#dbe7f0" stroke="none" stroke-width="0" />
+  <text x="102" y="801" fill="#20313f" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" text-anchor="start">
+    Research question
+  </text>
+  <text x="102" y="839" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">
+    Literature · methods
+  </text>
+  <text x="102" y="871" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">
+    Study design
+  </text>
+  <rect x="444" y="651" width="304" height="249" rx="8" fill="#ffffff" stroke="#cdd5da" stroke-width="1.5" />
+  <rect x="444" y="651" width="304" height="5" rx="0" fill="#d6e8e8" stroke="none" stroke-width="0" />
+  <text x="466" y="801" fill="#20313f" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" text-anchor="start">
+    Plan &amp; retrieve
+  </text>
+  <text x="466" y="839" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">
+    LangGraph + tools
+  </text>
+  <text x="466" y="871" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">
+    Search · read · rerank
+  </text>
+  <rect x="808" y="651" width="304" height="249" rx="8" fill="#ffffff" stroke="#cdd5da" stroke-width="1.5" />
+  <rect x="808" y="651" width="304" height="5" rx="0" fill="#d6e8e8" stroke="none" stroke-width="0" />
+  <text x="830" y="801" fill="#20313f" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" text-anchor="start">
+    Ground in sources
+  </text>
+  <text x="830" y="839" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">
+    Passages + citations
+  </text>
+  <text x="830" y="871" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">
+    Evidence for each finding
+  </text>
+  <rect x="1172" y="651" width="304" height="249" rx="8" fill="#ffffff" stroke="#cdd5da" stroke-width="1.5" />
+  <rect x="1172" y="651" width="304" height="5" rx="0" fill="#dbe7f0" stroke="none" stroke-width="0" />
+  <text x="1194" y="801" fill="#20313f" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" text-anchor="start">
+    Draft &amp; validate
+  </text>
+  <text x="1194" y="839" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">
+    Python / SQL drafts
+  </text>
+  <text x="1194" y="871" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">
+    Quote + syntax checks
+  </text>
+  <rect x="1536" y="651" width="304" height="249" rx="8" fill="#ffffff" stroke="#cdd5da" stroke-width="1.5" />
+  <rect x="1536" y="651" width="304" height="5" rx="0" fill="#eadbdc" stroke="none" stroke-width="0" />
+  <text x="1558" y="801" fill="#20313f" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" text-anchor="start">
+    Research workspace
+  </text>
+  <text x="1558" y="839" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">
+    Notebooks · comparisons
+  </text>
+  <text x="1558" y="871" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">
+    Plans + saved versions
+  </text>
+  <rect x="107" y="689" width="77" height="53" rx="8" fill="#ffffff" stroke="#326d92" stroke-width="2" />
+  <path d="M122 742l-3 14 20-14" stroke="#326d92" stroke-width="2" fill="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M120 705h46" stroke="#326d92" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M120 716h35" stroke="#326d92" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M120 727h39" stroke="#326d92" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="513" cy="700" r="12" fill="#ffffff" stroke="#287b78" stroke-width="2" />
+  <circle cx="475" cy="744" r="12" fill="#ffffff" stroke="#287b78" stroke-width="2" />
+  <circle cx="551" cy="744" r="12" fill="#ffffff" stroke="#287b78" stroke-width="2" />
+  <path
+    d="M507 711L482 734 M519 711L544 734 M489 744h48"
+    stroke="#287b78"
+    stroke-width="2"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle cx="513" cy="744" r="5" fill="#287b78" stroke="#287b78" stroke-width="2" />
+  <rect x="847" y="681" width="62" height="76" rx="5" fill="#ffffff" stroke="#bdcad3" stroke-width="1.5" />
+  <rect x="835" y="690" width="62" height="76" rx="5" fill="#ffffff" stroke="#287b78" stroke-width="2" />
+  <path d="M846 705h35" stroke="#287b78" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M846 715h40" stroke="#287b78" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M846 725h28" stroke="#287b78" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M846 750l9-10 9 4 10-13 12 7" stroke="#287b78" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="863" y="714" width="58" height="35" rx="5" fill="#eef6f4" stroke="#287b78" stroke-width="1.6" />
+  <text x="875" y="742" fill="#287b78" font-family="Georgia, serif" font-size="32" font-weight="700" text-anchor="start">“ ”</text>
+  <rect x="1200" y="690" width="86" height="68" rx="6" fill="#ffffff" stroke="#326d92" stroke-width="2" />
+  <path d="M1200 705h86" stroke="#326d92" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="1209" cy="698" r="1.4" fill="#326d92" stroke="#326d92" stroke-width="2" />
+  <circle cx="1216" cy="698" r="1.4" fill="#326d92" stroke="#326d92" stroke-width="2" />
+  <circle cx="1223" cy="698" r="1.4" fill="#326d92" stroke="#326d92" stroke-width="2" />
+  <text x="1213" y="732" fill="#326d92" font-family="Menlo, monospace" font-size="20" font-weight="700" text-anchor="start">&lt;/&gt;</text>
+  <path d="M1212 742h61 M1212 750h41" stroke="#326d92" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="1564" y="690" width="93" height="68" rx="6" fill="#ffffff" stroke="#93494b" stroke-width="2" />
+  <path d="M1589 690v68 M1564 703h93" stroke="#93494b" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="1596" y="711" width="52" height="10" rx="2" fill="#f7f1f1" stroke="#dac7c8" stroke-width="1" />
+  <rect x="1596" y="726" width="52" height="10" rx="2" fill="#f7f1f1" stroke="#dac7c8" stroke-width="1" />
+  <rect x="1596" y="741" width="52" height="10" rx="2" fill="#f7f1f1" stroke="#dac7c8" stroke-width="1" />
+  <path d="M1571 712h11" stroke="#93494b" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M1571 723h11" stroke="#93494b" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M1571 734h11" stroke="#93494b" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M395 771h36" stroke="#70818e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+  <path d="M759 771h36" stroke="#70818e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+  <path d="M1123 771h36" stroke="#70818e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+  <path d="M1487 771h36" stroke="#70818e" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" />
+  <path
+    d="M1688 900V968H596V900"
+    stroke="#70818e"
+    stroke-width="2"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    marker-end="url(#arrow)"
+    stroke-dasharray="7 6"
+  />
+  <rect x="873" y="949" width="593" height="38" rx="0" fill="#ffffff" stroke="#ffffff" stroke-width="0" />
+  <text x="1170" y="977" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle">
+    Researcher feedback → revise with original evidence
+  </text>
+  <path d="M80 1011H1840" stroke="#d6dde1" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="80" y="1046" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">
+    Source quotations, methods and assumptions stay visible with each draft.
+  </text>
+  <text x="1840" y="1046" fill="#65737d" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" text-anchor="end">
+    SYSTEM OVERVIEW
+  </text>
+</svg>
