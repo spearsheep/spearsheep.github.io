@@ -21,6 +21,8 @@ I am an MSE student in **Data Science** and **Computer & Information Science** a
 
 At the **Generative Machine Learning Research Group**, advised by [Prof. Jiatao Gu](https://jiataogu.me/), I develop LLM-backed agentic systems that turn multimodal instructions into spatial plans and executable structures. Previously, at the **Columbia DAP Lab**, advised by [Prof. Zhou Yu](https://www.cs.columbia.edu/~zhouyu/), I trained job-resume matching systems with SFT and GRPO. I have also studied autoencoder-based reconstruction for glaucoma progression and privacy-preserving synthetic data for depression prediction.
 
-Beyond industry and research, I care about turning ambitious ideas into useful products. I have built [Anima Lab](https://anima-lab.io/), a cross-platform AI companion, and **Job Junior**, a student-first platform designed to make job discovery and applications more personal, efficient, and accessible.
+Beyond industry and research, I care about turning ambitious ideas into useful products. I have built [Anima Lab](https://anima-lab.io/), a cross-platform AI companion; [My Auras](https://www.my-auras.com/), an AI-assisted visual portfolio and link-in-bio builder; and **Job Junior**, a student-first platform for job discovery and applications.
+
+I also host [Inside AI](/podcast/), a series of conversations with professors about AI, work, and how we think. I started it to question the claims we see on social media, understand what is changing, and build a more considered perspective of my own.
 
 I am always glad to meet people working across natural and artificial intelligence. If you are exploring a hard problem in agents, learning, or cognition, [let's talk](mailto:junyujohnnychen@gmail.com).

@@ -7,6 +7,11 @@ year: 2026–present
 importance: 1
 featured: true
 spotlight: true
+img: /assets/img/projects/tiktok-distillation.webp
+img_alt: Conceptual illustration of multimodal signals flowing through a teacher model into a compact student model and a personalized feed.
+img_width: 1600
+img_height: 900
+img_caption: Conceptual artwork illustrating model distillation and personalization.
 impact: Millions of examples · AUC 0.52 → 0.83 · 150ms serving
 ---
 

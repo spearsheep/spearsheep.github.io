@@ -1,0 +1,43 @@
+name: Inside AI
+name_zh: AI 局内人
+channel_url: https://www.youtube.com/@spearsheep01
+interview:
+  title: AI, careers & what comes next
+  guest: Lyle Ungar
+  affiliation: Professor, University of Pennsylvania
+  format: Full interview · 50 min
+  url: https://www.youtube.com/watch?v=QPO5tHHz520
+  image: /assets/img/podcast/lyle-ungar.webp
+  image_alt: Lyle Ungar in conversation for Inside AI.
+  image_width: 1280
+  image_height: 720
+  description: A conversation about what AI changes in our work, our relationships, and the skills we choose to develop—from learning to code to the promise and limits of multi-agent systems.
+questions:
+  - number: "01"
+    title: What is changing about work?
+    text: Which tasks will AI take on, what new roles might emerge, and what should students spend their time learning?
+  - number: "02"
+    title: What should we believe?
+    text: How do we separate real progress from hype, recognize uncertainty, and form judgments beyond a social media headline?
+  - number: "03"
+    title: What stays human?
+    text: What happens to our relationships, curiosity, and independent thinking as AI becomes part of everyday life?
+socials:
+  - name: YouTube
+    detail: Full conversations
+    url: https://www.youtube.com/@spearsheep01
+  - name: RedNote / 小红书
+    detail: Clips & reflections
+    url: https://www.xiaohongshu.com/user/profile/5c200d3e0000000005002e90
+  - name: Douyin / 抖音
+    detail: Short clips
+    url: https://v.douyin.com/PHtVnmT2yyo/
+  - name: TikTok
+    detail: Clips & conversations
+    url: https://www.tiktok.com/@spearsheep
+  - name: X
+    detail: Thoughts along the way
+    url: https://x.com/spearsheep
+  - name: Instagram
+    detail: Clips & behind the scenes
+    url: https://www.instagram.com/four_am_jc/

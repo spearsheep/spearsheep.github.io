@@ -1,0 +1,129 @@
+---
+layout: default
+---
+{% assign podcast = site.data.podcast %}
+<div class="podcast-page">
+  <header class="podcast-hero">
+    <p class="section-index">
+      Independent conversations <span aria-hidden="true">/</span> <span lang="zh">{{ podcast.name_zh }}</span>
+    </p>
+    <h1>
+      {{ podcast.name -}}
+      <span class="podcast-hero__period">.</span>
+    </h1>
+    <div class="podcast-hero__intro">
+      <h2>A clearer way to think about AI.</h2>
+      <div>
+        <p>AI is moving fast. Our understanding needs time.</p>
+        <p>
+          I sit down with professors to ask how AI is developing, what it means for our work and lives, and how to think through the questions that
+          don't fit into a headline.
+        </p>
+        <a class="button button--primary" href="{{ podcast.channel_url }}" target="_blank" rel="noopener noreferrer"
+          >Watch on YouTube <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </div>
+  </header>
+
+  <section class="podcast-interview" aria-labelledby="interview-heading">
+    <div class="section-heading">
+      <div>
+        <p class="section-index">The conversation</p>
+        <h2 id="interview-heading">In the room with Lyle Ungar.</h2>
+      </div>
+      <span class="podcast-format">{{ podcast.interview.format }}</span>
+    </div>
+    <a
+      class="podcast-interview__image"
+      href="{{ podcast.interview.url }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Watch the full Inside AI interview with Lyle Ungar on YouTube"
+    >
+      <img
+        src="{{ podcast.interview.image | relative_url }}"
+        alt="{{ podcast.interview.image_alt }}"
+        width="{{ podcast.interview.image_width }}"
+        height="{{ podcast.interview.image_height }}"
+        loading="lazy"
+        decoding="async"
+      >
+      <span class="podcast-play"><span aria-hidden="true">▶</span> Watch the full interview <span aria-hidden="true">↗</span></span>
+    </a>
+    <div class="podcast-interview__details">
+      <div>
+        <p class="section-index">{{ podcast.interview.guest }}</p>
+        <p class="podcast-guest">{{ podcast.interview.affiliation }}</p>
+      </div>
+      <div>
+        <h3>{{ podcast.interview.title }}</h3>
+        <p>{{ podcast.interview.description }}</p>
+        <a class="section-link" href="{{ podcast.interview.url }}" target="_blank" rel="noopener noreferrer"
+          >Watch the conversation <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="podcast-why" aria-labelledby="podcast-why-heading">
+    <p class="section-index">Why I started</p>
+    <div>
+      <h2 id="podcast-why-heading">From anxiety to understanding.</h2>
+      <p>
+        Like many people, I feel the uncertainty around AI: jobs changing, new opportunities appearing, and a constant stream of confident,
+        conflicting claims online. Social media can leave us with misconceptions long before we have the context to question them.
+      </p>
+      <p>
+        I started these interviews to work through that uncertainty myself. I want to understand how people who study and build AI see its
+        development, challenge my assumptions, and develop my own framework and philosophy for thinking about it.
+      </p>
+      <p>
+        I'm sharing the conversations so others can do the same. Each guest brings a perspective to consider, and each interview is a chance to ask a
+        better question.
+      </p>
+    </div>
+  </section>
+
+  <section class="podcast-questions" aria-labelledby="podcast-questions-heading">
+    <div class="section-heading">
+      <div>
+        <p class="section-index">Questions I keep coming back to</p>
+        <h2 id="podcast-questions-heading">Technology. Work. Being human.</h2>
+      </div>
+    </div>
+    <div class="podcast-question-grid">
+      {% for question in podcast.questions %}
+        <article>
+          <span class="section-index">{{ question.number }}</span>
+          <h3>{{ question.title }}</h3>
+          <p>{{ question.text }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="podcast-elsewhere" aria-labelledby="podcast-elsewhere-heading">
+    <div class="section-heading">
+      <div>
+        <p class="section-index">Follow along</p>
+        <h2 id="podcast-elsewhere-heading">The conversation continues.</h2>
+      </div>
+    </div>
+    <p>Full interviews live on YouTube. I also share clips and reflections across RedNote, Douyin, TikTok, X, and Instagram.</p>
+    <div class="podcast-social-grid">
+      {% for social in podcast.socials %}
+        <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer"
+          ><span>
+            {{- social.name }}
+            <span aria-hidden="true">↗</span></span
+          ><small>{{ social.detail }}</small></a
+        >
+      {% endfor %}
+    </div>
+    <p class="podcast-invite">
+      Have a question I should ask, or a guest in mind?
+      <a href="mailto:{{ site.email }}?subject=Inside%20AI">Get in touch <span aria-hidden="true">↗</span></a>
+    </p>
+  </section>
+</div>

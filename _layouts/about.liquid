@@ -52,6 +52,45 @@ layout: default
     </div>
   </section>
 
+  <section class="home-section home-podcast" aria-labelledby="podcast-heading">
+    <div class="section-heading">
+      <div>
+        <p class="section-index">Podcast <span aria-hidden="true">/</span> <span lang="zh">AI 局内人</span></p>
+        <h2 id="podcast-heading">Inside AI.</h2>
+      </div>
+      <a class="section-link" href="{{ '/podcast/' | relative_url }}">Explore the podcast <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="home-podcast__grid">
+      <a
+        class="home-podcast__image"
+        href="{{ site.data.podcast.interview.url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Watch Inside AI with Lyle Ungar on YouTube"
+        ><img
+          src="{{ site.data.podcast.interview.image | relative_url }}"
+          width="1600"
+          height="900"
+          alt="{{ site.data.podcast.interview.image_alt }}"
+          loading="lazy"
+          decoding="async"
+
+        ><span class="podcast-play"><span aria-hidden="true">▶</span> Full interview <span aria-hidden="true">↗</span></span></a
+      >
+      <div class="home-podcast__copy">
+        <h3>
+          AI is moving fast.<br>
+          Let's make sense of it.
+        </h3>
+        <p>
+          I interview professors to look beyond social media claims, understand how AI is changing work and life, and build a perspective of my own.
+        </p>
+        <p class="home-podcast__guest">With Lyle Ungar · University of Pennsylvania</p>
+        <a class="section-link" href="{{ '/podcast/' | relative_url }}">The story behind Inside AI <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
   {% if page.news and site.announcements.enabled %}
     <section class="home-section home-section--compact" aria-labelledby="news-heading">
       <div class="section-heading">

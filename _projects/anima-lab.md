@@ -6,6 +6,11 @@ category: Product systems
 year: 2026–present
 importance: 4
 featured: true
+img: /assets/img/projects/anima-lab.webp
+img_alt: Anima Lab's homepage with its companion chat interface, character portraits, and memory and voice features.
+img_width: 1600
+img_height: 900
+img_caption: Anima Lab's live product homepage.
 impact: 1,000+ users · 40K+ followers · recurring revenue
 ---
 

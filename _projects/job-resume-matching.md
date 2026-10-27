@@ -6,6 +6,12 @@ category: Reinforcement learning
 year: 2025
 importance: 3
 featured: true
+img: /assets/img/projects/job-resume-ranking.png
+img_alt: Qwen re-ranks resumes against a job post using a sliding window, a formatted recruiter prompt, and an updated candidate ranking.
+img_fit: contain
+img_width: 1130
+img_height: 840
+img_caption: Sliding-window LLM re-ranking of a candidate pool against a job description.
 impact: +17% nDCG · +23% recall
 ---
 

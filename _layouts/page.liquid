@@ -15,6 +15,20 @@ layout: default
   </header>
 
   <article>
+    {% if page.img %}
+      <figure class="case-study__visual">
+        <img
+          src="{{ page.img | relative_url }}"
+          alt="{{ page.img_alt | escape }}"
+          width="{{ page.img_width }}"
+          height="{{ page.img_height }}"
+          decoding="async"
+        >
+        {% if page.img_caption %}
+          <figcaption>{{ page.img_caption }}</figcaption>
+        {% endif %}
+      </figure>
+    {% endif %}
     {{ content }}
   </article>
 

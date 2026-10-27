@@ -43,7 +43,12 @@ module Jekyll
     end
 
     def bust_css_cache(file_name)
-      CacheDigester.new(file_name: file_name, directory: 'assets/_sass').digest!
+      # Include the real Sass directory, entry point, and Liquid configuration.
+      # The old assets/_sass path was empty, giving every build the same hash.
+      sources = Dir['_sass/**/*.scss'].sort + ['assets/css/main.scss', '_config.yml']
+      digest = Digest::MD5.new
+      sources.each { |source| digest.update(File.read(source)) }
+      [file_name, '?', digest.hexdigest].join
     end
   end
 end

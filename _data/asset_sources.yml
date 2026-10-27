@@ -1,0 +1,21 @@
+updated: 2026-10-27
+assets:
+  - path: /assets/img/projects/tiktok-distillation.webp
+    source: Built-in image_gen tool; conceptual illustration, not an internal TikTok system diagram.
+    prompt: |-
+      Use case: stylized-concept
+      Asset type: wide 16:9 cover illustration for a machine learning engineer's personal portfolio project about personalized e-commerce intent model distillation at TikTok.
+      Primary request: a sophisticated engineering editorial illustration showing many multimodal behavior signals distilled from a large teacher model into a small fast student model, then flowing into a personalized ranked feed. Build a clear, visually elegant left-to-right composition: small image/video tiles and fine connected nodes on the left, a large translucent architectural network in the center, a compact luminous model and abstract vertical feed tiles on the right.
+      Style/medium: precise premium 3D technical illustration, smoked glass and brushed graphite, crisp fine traces, subtle depth, beautifully lit against an almost-black charcoal background. Sparse cyan and coral accents reminiscent of short-video technology. No purple.
+      Composition/framing: landscape 16:9, strong silhouette readable at small card size, generous breathing room at edges. Art fills the cover without a large empty text area.
+      Constraints: conceptual artwork only; no text, no numbers, no TikTok logo, no watermark, no fake dashboard, no company-internal architecture. The illustration should communicate personalization, distillation, and fast serving.
+  - path: /assets/img/projects/anima-lab.webp
+    source: Browser screenshot of https://anima-lab.io/ at 1600 by 900 CSS pixels.
+  - path: /assets/img/projects/my-auras.webp
+    source: Browser screenshot of https://www.my-auras.com/ at 1600 by 900 CSS pixels.
+  - path: /assets/img/projects/job-resume-ranking.png
+    source: Original user attachment, preserved without alteration.
+  - path: /assets/img/publication_preview/Agent_Workflow%20(1).png
+    source: Existing APT publication preview reused from this repository.
+  - path: /assets/img/podcast/lyle-ungar.webp
+    source: Published thumbnail for https://www.youtube.com/watch?v=QPO5tHHz520.

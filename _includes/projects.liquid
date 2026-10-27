@@ -17,6 +17,18 @@
       <h3>{{ project.title }}</h3>
     {% endif %}
     <p>{{ project.description }}</p>
+    {% if project.img %}
+      <div class="project-card__visual{% if project.img_fit == 'contain' %} project-card__visual--contain{% endif %}">
+        <img
+          src="{{ project.img | relative_url }}"
+          alt="{{ project.img_alt | escape }}"
+          width="{{ project.img_width }}"
+          height="{{ project.img_height }}"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+    {% endif %}
     {% if project.impact %}
       <p class="project-card__impact">{{ project.impact }}</p>
     {% endif %}

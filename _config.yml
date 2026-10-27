@@ -81,7 +81,7 @@ github_username: spearsheep
 gitlab_username: # your GitLab user name
 ieee_id: # your ieeexplore.ieee.org/author/id
 inspirehep_id: # Inspire HEP author ID
-instagram_id: # your instagram id
+instagram_id: four_am_jc
 kaggle_id: # your kaggle id
 keybase_username: # your keybase user name
 lastfm_id: # your lastfm id
@@ -107,8 +107,8 @@ whatsapp_number: # your WhatsApp number (full phone number in international form
 wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
 work_url: # work page URL
-x_username: # your X handle
-youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
+x_username: spearsheep
+youtube_id: spearsheep01
 zotero_username: # your zotero username
 
 contact_note: >
@@ -282,7 +282,8 @@ sass:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  exclude: ["robots.txt", "assets/js/search/*.js", "assets/libs/**/*"]
+  # Sass already compresses main.css; avoid a second pass over the icon fonts.
+  exclude: ["robots.txt", "assets/css/main.css", "assets/js/search/*.js", "assets/libs/**/*"]
   uglifier_args:
     harmony: true
 

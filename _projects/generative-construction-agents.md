@@ -6,6 +6,12 @@ category: Agentic systems
 year: 2024–present
 importance: 2
 featured: true
+img: /assets/img/publication_preview/Agent_Workflow%20(1).png
+img_alt: APT research figure showing the architectural planning and construction workflow for an LLM-driven Minecraft agent.
+img_fit: contain
+img_width: 965
+img_height: 544
+img_caption: The planning and construction workflow from our APT paper.
 impact: +25% one-shot accuracy · +12% spatial consistency
 ---
 

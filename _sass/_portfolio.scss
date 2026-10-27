@@ -481,6 +481,322 @@ button:focus-visible {
   letter-spacing: 0.02em;
 }
 
+.project-card__visual {
+  aspect-ratio: 16 / 10;
+  margin: 1.1rem 0 0.35rem;
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.85rem;
+  background: #ffffff;
+}
+
+.project-card__visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 350ms ease;
+}
+
+.project-card__visual--contain img {
+  padding: 0.7rem;
+  object-fit: contain;
+}
+
+.project-card__link:hover .project-card__visual img {
+  transform: scale(1.015);
+}
+
+.project-grid--home .project-card--spotlight .project-card__visual {
+  aspect-ratio: 16 / 7;
+}
+
+.case-study__visual {
+  margin: 3rem auto 0;
+  max-width: 880px;
+}
+
+.case-study__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 1rem;
+  background: #ffffff;
+}
+
+.case-study__visual figcaption {
+  margin-top: 0.85rem;
+  color: var(--global-text-color-light);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.home-podcast__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.home-podcast__image,
+.podcast-interview__image {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 1.25rem;
+  background: #181818;
+}
+
+.home-podcast__image img,
+.podcast-interview__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 350ms ease;
+}
+
+.home-podcast__image:hover img,
+.podcast-interview__image:hover img {
+  transform: scale(1.025);
+}
+
+.podcast-play {
+  position: absolute;
+  right: 1.1rem;
+  bottom: 1.1rem;
+  left: 1.1rem;
+  display: flex;
+  min-height: 46px;
+  align-items: center;
+  gap: 0.7rem;
+  width: fit-content;
+  max-width: calc(100% - 2.2rem);
+  padding: 0.65rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  color: #ffffff;
+  background: rgba(15, 15, 15, 0.88);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.home-podcast__copy h3 {
+  margin: 0 0 1.25rem;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.home-podcast__copy p,
+.podcast-page p {
+  color: var(--global-text-color-light);
+}
+
+.home-podcast__copy .home-podcast__guest {
+  margin: 1.5rem 0 0.2rem;
+  color: var(--global-text-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.podcast-hero {
+  padding: clamp(4rem, 9vw, 7rem) 0 clamp(4rem, 8vw, 6rem);
+}
+
+.podcast-hero > h1 {
+  margin: 1.5rem 0 3.5rem;
+  font-size: clamp(4.75rem, 13vw, 9.5rem);
+  font-weight: 650;
+  line-height: 0.95;
+  letter-spacing: -0.07em;
+}
+
+.podcast-hero__period {
+  color: var(--global-theme-color);
+}
+
+.podcast-hero__intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.podcast-hero__intro h2 {
+  max-width: 470px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.5rem, 4.6vw, 4rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+}
+
+.podcast-hero__intro p:first-child {
+  color: var(--global-text-color);
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.podcast-hero__intro .button {
+  margin-top: 0.8rem;
+}
+
+.podcast-interview,
+.podcast-why,
+.podcast-questions,
+.podcast-elsewhere {
+  padding: clamp(3.5rem, 7vw, 6rem) 0;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.podcast-page .section-index {
+  color: var(--global-theme-color);
+}
+
+.podcast-format,
+.podcast-guest {
+  color: var(--global-text-color-light);
+  font-size: 0.82rem;
+}
+
+.podcast-format {
+  flex-shrink: 0;
+  padding-bottom: 0.25rem;
+}
+
+.podcast-interview__details {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.podcast-interview__details .section-index {
+  margin-bottom: 0.4rem;
+}
+
+.podcast-interview__details h3 {
+  margin: 0 0 0.9rem;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.podcast-why {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 2rem;
+}
+
+.podcast-why h2 {
+  margin: 0 0 2rem;
+  font-size: clamp(2.25rem, 4.5vw, 3.6rem);
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.podcast-why p:not(.section-index) {
+  max-width: 700px;
+  font-size: 1.05rem;
+}
+
+.podcast-question-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
+}
+
+.podcast-question-grid article {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.podcast-question-grid h3 {
+  margin: 1.25rem 0 1rem;
+  font-size: 1.65rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.podcast-question-grid p {
+  font-size: 0.95rem;
+}
+
+.podcast-social-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.podcast-social-grid a {
+  display: flex;
+  min-height: 105px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 1.2rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 1rem;
+  color: var(--global-text-color);
+  background: var(--portfolio-panel-color);
+  text-decoration: none;
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+.podcast-social-grid a:hover {
+  border-color: var(--global-theme-color);
+  background: var(--portfolio-panel-hover-color);
+}
+
+.podcast-social-grid a > span {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.podcast-social-grid small {
+  color: var(--global-text-color-light);
+  font-size: 0.78rem;
+}
+
+.podcast-invite {
+  margin: 2rem 0 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  .home-podcast__grid,
+  .podcast-hero__intro,
+  .podcast-interview__details,
+  .podcast-why,
+  .podcast-question-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .podcast-social-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .podcast-interview .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .project-grid--home .project-card--spotlight .project-card__visual {
+    aspect-ratio: 16 / 10;
+  }
+}
+
 .project-card__cta {
   margin-top: 0.8rem;
   font-size: 0.82rem;
@@ -819,7 +1135,7 @@ footer {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .navbar .navbar-nav {
     gap: 0.25rem;
     align-items: stretch;
@@ -834,7 +1150,9 @@ footer {
   .navbar .toggle-container {
     margin: 0.25rem 0 0;
   }
+}
 
+@media (max-width: 700px) {
   .home-hero {
     gap: 3.25rem;
     padding-top: 4.5rem;
