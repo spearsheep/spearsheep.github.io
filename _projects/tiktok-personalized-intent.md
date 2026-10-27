@@ -3,7 +3,7 @@ layout: page
 title: Personalized E-commerce Intent Model Distillation at TikTok
 description: Model distillation at production scale for personalized e-commerce intent prediction.
 category: Industry experience
-year: 2026–present
+year: May–Aug 2026
 importance: 1
 featured: true
 spotlight: true
@@ -16,7 +16,7 @@ impact: Millions of examples · AUC 0.52 → 0.83 · 150ms serving
 ---
 
 <div class="case-study" markdown="1">
-<p class="case-study__lede">At TikTok, I build teacher-student learning systems that distill millions of multimodal behavioral examples into fast, personalized e-commerce intent predictions.</p>
+<p class="case-study__lede">At TikTok, I built teacher-student learning systems that distilled millions of multimodal behavioral examples into fast, personalized e-commerce intent predictions.</p>
 
 <div class="case-study__facts">
   <div><span>Role</span><strong>Machine Learning Engineer Intern</strong></div>

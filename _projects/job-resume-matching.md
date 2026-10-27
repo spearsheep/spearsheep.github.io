@@ -4,7 +4,7 @@ title: Job-resume matching with RL
 description: Structured retrieval and recruiter-intent modeling with Qwen, SFT, and GRPO.
 category: Reinforcement learning
 year: 2025
-importance: 3
+importance: 4
 featured: true
 img: /assets/img/projects/job-resume-ranking.png
 img_alt: Qwen re-ranks resumes against a job post using a sliding window, a formatted recruiter prompt, and an updated candidate ranking.

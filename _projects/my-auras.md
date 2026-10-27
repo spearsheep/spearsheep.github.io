@@ -4,7 +4,7 @@ title: My Auras
 description: An AI-assisted visual portfolio and link-in-bio builder that puts your work in view.
 category: Product systems
 year: Ongoing
-importance: 5
+importance: 6
 featured: true
 impact: AI-assisted creation · visual editor · reusable templates
 img: /assets/img/projects/my-auras.webp

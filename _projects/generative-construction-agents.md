@@ -4,7 +4,7 @@ title: Generative construction agents
 description: LLM-backed agentic systems that plan, build, inspect, and repair structures in Minecraft.
 category: Agentic systems
 year: 2024–present
-importance: 2
+importance: 3
 featured: true
 img: /assets/img/publication_preview/Agent_Workflow%20(1).png
 img_alt: APT research figure showing the architectural planning and construction workflow for an LLM-driven Minecraft agent.

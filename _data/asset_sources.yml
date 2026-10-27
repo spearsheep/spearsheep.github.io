@@ -1,5 +1,17 @@
 updated: 2026-10-27
 assets:
+  - path: /assets/img/projects/wrds-research-pipeline.svg
+    source: Original editable vector diagram, authored from the latest résumé and the FinJournal ingestion, retrieval, orchestrator, and research-workspace code.
+    figure_scope: Paper2WRDS corpus construction and evidence-grounded research; source and syntax checks are distinct from successful numerical replication.
+    implementation_references:
+      - FinJournal/src/agent/ingest/chunk_builder.py
+      - FinJournal/src/agent/ingest/indexer.py
+      - FinJournal/src/agent/graph/retriever.py
+      - FinJournal/src/agent/graph/workflow.py
+      - FinJournal/src/agent/orchestrator/loop.py
+      - FinJournal/src/research/paper_artifacts.py
+      - FinJournal/src/research/store.py
+    resume_reference: JUN_YU_Chen_resume_MLE_2026.pdf, last modified October 19, 2026.
   - path: /assets/img/projects/tiktok-distillation.webp
     source: Built-in image_gen tool; conceptual illustration, not an internal TikTok system diagram.
     prompt: |-

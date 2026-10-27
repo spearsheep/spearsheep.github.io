@@ -12,7 +12,7 @@ layout: default
     {% if page.cv_pdf %}
       <a
         class="button button--primary cv-download"
-        href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
+        href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url | bust_file_cache }}"
         target="_blank"
         rel="noopener noreferrer"
       >

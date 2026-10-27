@@ -8,7 +8,11 @@ layout: default
       <h1 id="home-title" class="home-title">Jun Yu Chen</h1>
       <p class="home-deck">{{ page.hero }}</p>
       <div class="home-actions" aria-label="Primary links">
-        <a class="button button--primary" href="{{ '/assets/pdf/Jun_Yu_Chen_Resume.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"
+        <a
+          class="button button--primary"
+          href="{{ '/assets/pdf/Jun_Yu_Chen_Resume.pdf' | relative_url | bust_file_cache }}"
+          target="_blank"
+          rel="noopener noreferrer"
           >View résumé <span aria-hidden="true">↗</span></a
         >
         <a class="button button--quiet" href="mailto:{{ site.email }}">Email me <span aria-hidden="true">↗</span></a>

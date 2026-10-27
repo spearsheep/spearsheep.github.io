@@ -4,7 +4,7 @@ title: Job Junior
 description: A student-first job discovery and outreach platform powered by retrieval and LLM automation.
 category: Product systems
 year: 2023–2026
-importance: 6
+importance: 7
 featured: false
 impact: 6× pipeline throughput · $2K+/month pilot
 ---

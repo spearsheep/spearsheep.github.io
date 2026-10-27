@@ -29,10 +29,24 @@
 - title: Industry Experience
   type: time_table
   contents:
+    - title: AI Engineer
+      institution: Wharton Research Data Services (WRDS)
+      location: Philadelphia, PA
+      year: Jan 2026–present
+      description:
+        - Built a LangGraph financial research agent that turns paper ideas into Python/SQL notebook drafts for stock-market analysis, replication, and study design.
+        - Implemented an agent harness with tool orchestration, persistent research state, feedback-driven code generation, source-quotation validation, and Python syntax checks.
+        - Developed a retrieval pipeline for approximately 19.3K finance papers using web scraping, multi-GPU MinerU parsing at approximately 1.3s/page, and Amazon S3 ingestion.
+        - Designed block-aware Qdrant indexing that preserves context across text, equations, and figure captions, with paper, page, and section metadata for source-grounded retrieval.
+      linkitems:
+        - link: /projects/wrds-financial-research/
+          linkname: Project
+        - link: https://www.ruidaiwrds.info/
+          linkname: Advisor — Dr. Rui Dai
     - title: Machine Learning Engineer Intern
       institution: TikTok
       location: Seattle, WA
-      year: May 2026–present
+      year: May–Aug 2026
       description:
         - Built an end-to-end teacher-student distillation pipeline for personalized e-commerce intent recognition across millions of query and multimodal user-behavior examples, spanning offline labeling, data infrastructure, and student models optimized for 150ms online serving.
         - Productionized daily Spark, SQL, and LLM labeling DAGs generating 40K reasoning-annotated labels per day at 85% human alignment.
@@ -130,10 +144,10 @@
   contents:
     - title: Machine learning
       items:
-        - PyTorch, Qwen, SFT, GRPO, VERL, RLHF, vLLM, DeepSpeed, LLaMA-Factory, multimodal agents
+        - PyTorch, Qwen, SFT, GRPO, VERL, RLHF, vLLM, DeepSpeed, LLaMA-Factory, LangGraph, LlamaIndex, RAG, multimodal agents
     - title: Data & systems
       items:
-        - Python, TypeScript, SQL, Spark, FastAPI, MongoDB, Convex, AWS, Docker
+        - Python, TypeScript, SQL, Spark, FastAPI, Qdrant, MongoDB, Convex, AWS, Docker
     - title: Product engineering
       items:
         - Next.js, React Native, SwiftUI, agent tool use, memory systems, real-time multimodal experiences
