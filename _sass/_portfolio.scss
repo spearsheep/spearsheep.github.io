@@ -1049,6 +1049,57 @@ button:focus-visible {
   margin-top: 1.5rem;
 }
 
+.demo-gallery__clip {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--global-divider-color);
+  scroll-margin-top: 90px;
+}
+
+.demo-gallery__eyebrow {
+  color: var(--global-text-color-light);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.demo-gallery__clip h2 {
+  margin-top: 0.75rem;
+}
+
+.demo-gallery__clip video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin: 1.5rem 0 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 1rem;
+  background: #1c2736;
+}
+
+.demo-gallery__clip details {
+  margin-bottom: 0.75rem;
+  color: var(--global-text-color-light);
+}
+
+.demo-gallery__clip summary {
+  width: fit-content;
+  padding: 0.4rem 0;
+  cursor: pointer;
+}
+
+.demo-gallery__clip summary:focus-visible {
+  outline: 3px solid var(--global-theme-color);
+  outline-offset: 3px;
+}
+
+.demo-gallery__download {
+  display: inline-block;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
 .cv .card {
   margin-top: 0 !important;
   padding: 2rem 0 !important;

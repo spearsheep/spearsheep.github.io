@@ -23,6 +23,12 @@ assets:
       Constraints: conceptual artwork only; no text, no numbers, no TikTok logo, no watermark, no fake dashboard, no company-internal architecture. The illustration should communicate personalization, distillation, and fast serving.
   - path: /assets/img/projects/anima-lab.webp
     source: Browser screenshot of https://anima-lab.io/ at 1600 by 900 CSS pixels.
+  - path: /assets/img/projects/anima-brain-voice-message.jpg
+    source: Frame from the owner's English Anima Brain SDK speech demonstration. Media provenance at https://github.com/spearsheep/anima-brain/blob/main/docs/demos.md.
+  - path: /assets/img/projects/anima-brain-audio-call.jpg
+    source: Frame from the owner's English audio-call demonstration; interface re-recorded around actual call output. https://github.com/spearsheep/anima-brain/releases/tag/demo-media-2026-11.
+  - path: /assets/img/projects/anima-brain-video-call.jpg
+    source: Frame from the owner's synchronized S2/RTC demonstration with the Anima Lab Rina avatar. https://github.com/spearsheep/anima-brain/releases/tag/demo-media-2026-11.
   - path: /assets/img/projects/my-auras.webp
     source: Browser screenshot of https://www.my-auras.com/ at 1600 by 900 CSS pixels.
   - path: /assets/img/projects/job-resume-ranking.png
